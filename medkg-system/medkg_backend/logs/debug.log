@@ -1,0 +1,794 @@
+INFO 2025-03-29 18:54:09,160 autoreload Watching for file changes with StatReloader
+INFO 2025-03-29 18:54:09,160 autoreload Watching for file changes with StatReloader
+INFO 2025-03-29 18:54:50,249 autoreload Watching for file changes with StatReloader
+INFO 2025-03-29 18:54:50,249 autoreload Watching for file changes with StatReloader
+INFO 2025-03-29 18:57:42,342 autoreload Watching for file changes with StatReloader
+INFO 2025-03-29 18:57:42,342 autoreload Watching for file changes with StatReloader
+INFO 2025-03-29 19:01:36,546 basehttp "OPTIONS /api/register/ HTTP/1.1" 200 0
+INFO 2025-03-29 19:01:36,546 basehttp "OPTIONS /api/register/ HTTP/1.1" 200 0
+INFO 2025-03-29 19:01:36,552 views 收到注册请求: 测试用户001
+ERROR 2025-03-29 19:01:36,826 views 注册异常: (1054, "Unknown column 'date_joined' in 'field list'")
+ERROR 2025-03-29 19:01:36,826 log Internal Server Error: /api/register/
+ERROR 2025-03-29 19:01:36,826 log Internal Server Error: /api/register/
+ERROR 2025-03-29 19:01:36,827 basehttp "POST /api/register/ HTTP/1.1" 500 121
+ERROR 2025-03-29 19:01:36,827 basehttp "POST /api/register/ HTTP/1.1" 500 121
+INFO 2025-04-05 00:01:49,845 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:01:49,845 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-05 00:01:56,010 neo4j_client Failed to connect to Neo4j database at bolt://localhost:7687: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+ERROR 2025-04-05 00:01:56,022 views 问答系统组件初始化失败: Neo4j连接失败: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+ERROR 2025-04-05 00:02:00,111 neo4j_client Failed to connect to Neo4j database at bolt://localhost:7687: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+ERROR 2025-04-05 00:02:00,112 views 知识图谱模块初始化失败: Neo4j连接失败: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+INFO 2025-04-05 00:03:20,325 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:03:20,325 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:03:25,286 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:03:25,290 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 00:03:25,291 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 00:03:25,293 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 00:03:25,295 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 00:03:25,297 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 00:03:25,302 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 00:03:25,304 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 00:03:25,304 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 00:03:25,942 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 00:03:39,074 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 00:03:39,086 question_parser 问题解析器初始化完成
+INFO 2025-04-05 00:03:39,086 views 问答系统组件初始化成功
+WARNING 2025-04-05 00:03:46,089 bert_classifier BERT模型路径不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\models/bert-base-chinese-medical，将使用规则分类器
+WARNING 2025-04-05 00:03:46,090 views BERT模型不可用，将仅使用规则分类器
+INFO 2025-04-05 00:03:48,165 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:03:48,166 views 知识图谱模块初始化成功
+INFO 2025-04-05 00:10:26,223 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:10:26,223 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:10:30,223 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:10:30,225 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 00:10:30,228 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 00:10:30,230 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 00:10:30,231 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 00:10:30,233 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 00:10:30,241 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 00:10:30,244 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 00:10:30,245 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 00:10:30,782 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 00:10:43,741 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 00:10:43,748 question_parser 问题解析器初始化完成
+INFO 2025-04-05 00:10:43,748 views 问答系统组件初始化成功
+WARNING 2025-04-05 00:10:49,439 bert_classifier BERT模型路径不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\models/bert-base-chinese-medical，将使用规则分类器
+WARNING 2025-04-05 00:10:49,440 views BERT模型不可用，将仅使用规则分类器
+INFO 2025-04-05 00:10:51,497 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:10:51,497 views 知识图谱模块初始化成功
+INFO 2025-04-05 00:12:10,150 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:12:10,150 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:12:14,325 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:12:14,328 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 00:12:14,330 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 00:12:14,332 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 00:12:14,333 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 00:12:14,335 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 00:12:14,343 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 00:12:14,345 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 00:12:14,347 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 00:12:14,869 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 00:12:27,876 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 00:12:27,876 question_parser 问题解析器初始化完成
+INFO 2025-04-05 00:12:27,877 views 问答系统组件初始化成功
+INFO 2025-04-05 00:12:33,920 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 00:12:33,920 views BERT分类器初始化成功
+INFO 2025-04-05 00:12:35,998 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:12:35,998 views 知识图谱模块初始化成功
+INFO 2025-04-05 00:29:36,040 autoreload D:\APP\001test\bishe_test\medkg-system\medkg_backend\manage.py changed, reloading.
+INFO 2025-04-05 00:29:36,040 autoreload D:\APP\001test\bishe_test\medkg-system\medkg_backend\manage.py changed, reloading.
+INFO 2025-04-05 00:29:37,549 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:29:37,549 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:29:41,462 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:29:41,465 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 00:29:41,466 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 00:29:41,467 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 00:29:41,469 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 00:29:41,471 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 00:29:41,476 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 00:29:41,479 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 00:29:41,479 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 00:29:42,038 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 00:29:55,576 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 00:29:55,576 question_parser 问题解析器初始化完成
+INFO 2025-04-05 00:29:55,576 views 问答系统组件初始化成功
+INFO 2025-04-05 00:30:01,937 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 00:30:01,938 views BERT分类器初始化成功
+INFO 2025-04-05 00:30:03,960 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:30:03,960 views 知识图谱模块初始化成功
+INFO 2025-04-05 00:30:10,162 autoreload D:\APP\001test\bishe_test\medkg-system\medkg_backend\manage.py changed, reloading.
+INFO 2025-04-05 00:30:10,162 autoreload D:\APP\001test\bishe_test\medkg-system\medkg_backend\manage.py changed, reloading.
+INFO 2025-04-05 00:30:11,636 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:30:11,636 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:30:15,511 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:30:15,513 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 00:30:15,514 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 00:30:15,516 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 00:30:15,518 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 00:30:15,520 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 00:30:15,525 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 00:30:15,527 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 00:30:15,528 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 00:30:16,071 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 00:30:29,426 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 00:30:29,428 question_parser 问题解析器初始化完成
+INFO 2025-04-05 00:30:29,429 views 问答系统组件初始化成功
+INFO 2025-04-05 00:30:35,418 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 00:30:35,420 views BERT分类器初始化成功
+INFO 2025-04-05 00:30:37,462 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:30:37,463 views 知识图谱模块初始化成功
+INFO 2025-04-05 00:32:42,714 autoreload D:\APP\001test\bishe_test\medkg-system\medkg_backend\manage.py changed, reloading.
+INFO 2025-04-05 00:32:42,714 autoreload D:\APP\001test\bishe_test\medkg-system\medkg_backend\manage.py changed, reloading.
+INFO 2025-04-05 00:32:44,244 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:32:44,244 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 00:32:48,405 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:32:48,408 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 00:32:48,409 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 00:32:48,410 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 00:32:48,412 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 00:32:48,414 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 00:32:48,419 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 00:32:48,421 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 00:32:48,422 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 00:32:49,046 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 00:33:02,579 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 00:33:02,580 question_parser 问题解析器初始化完成
+INFO 2025-04-05 00:33:02,580 views 问答系统组件初始化成功
+INFO 2025-04-05 00:33:08,633 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 00:33:08,635 views BERT分类器初始化成功
+INFO 2025-04-05 00:33:10,698 neo4j_client Connected to Neo4j database at bolt://localhost:7687
+INFO 2025-04-05 00:33:10,698 views 知识图谱模块初始化成功
+INFO 2025-04-05 11:56:14,139 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 11:56:14,139 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-05 11:56:22,410 neo4j_client Failed to connect to Neo4j database at bolt://localhost:7687: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+ERROR 2025-04-05 11:56:22,424 views 问答系统组件初始化失败: Neo4j连接失败: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+ERROR 2025-04-05 11:56:26,489 neo4j_client Failed to connect to Neo4j database at bolt://localhost:7687: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+ERROR 2025-04-05 11:56:26,490 views 知识图谱模块初始化失败: Neo4j连接失败: Couldn't connect to localhost:7687 (resolved to ()):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] 由于目标计算机积极拒绝，无法连接。)
+INFO 2025-04-05 14:06:41,913 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:06:41,913 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:07:12,388 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:07:12,388 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:07:18,119 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 14:07:18,124 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 14:07:18,124 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 14:07:18,126 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 14:07:18,128 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 14:07:18,131 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 14:07:18,138 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 14:07:18,141 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 14:07:18,142 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 14:07:18,686 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 14:07:32,310 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 14:07:32,314 question_parser 问题解析器初始化完成
+INFO 2025-04-05 14:07:32,314 views 问答系统组件初始化成功
+INFO 2025-04-05 14:07:40,484 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 14:07:40,484 views BERT分类器初始化成功
+INFO 2025-04-05 14:08:19,411 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:08:19,411 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:08:23,377 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 14:08:23,381 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 14:08:23,382 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 14:08:23,383 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 14:08:23,385 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 14:08:23,387 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 14:08:23,392 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 14:08:23,394 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 14:08:23,395 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 14:08:23,923 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 14:08:37,466 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 14:08:37,467 question_parser 问题解析器初始化完成
+INFO 2025-04-05 14:08:37,467 views 问答系统组件初始化成功
+INFO 2025-04-05 14:08:44,303 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 14:08:44,304 views BERT分类器初始化成功
+INFO 2025-04-05 14:09:13,241 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:09:13,241 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:09:17,544 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 14:09:17,549 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 14:09:17,551 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 14:09:17,552 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 14:09:17,555 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 14:09:17,557 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 14:09:17,564 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 14:09:17,566 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 14:09:17,567 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 14:09:18,120 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 14:09:31,208 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 14:09:31,212 question_parser 问题解析器初始化完成
+INFO 2025-04-05 14:09:31,213 views 问答系统组件初始化成功
+INFO 2025-04-05 14:09:37,307 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 14:09:37,309 views BERT分类器初始化成功
+INFO 2025-04-05 14:15:16,683 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:15:16,683 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:15:22,295 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 14:15:22,299 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 14:15:22,300 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 14:15:22,302 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 14:15:22,303 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 14:15:22,305 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 14:15:22,311 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 14:15:22,314 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 14:15:22,315 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 14:15:22,854 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 14:15:36,066 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 14:15:36,070 question_parser 问题解析器初始化完成
+INFO 2025-04-05 14:15:36,070 views 问答系统组件初始化成功
+INFO 2025-04-05 14:15:42,186 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 14:15:42,188 views BERT分类器初始化成功
+INFO 2025-04-05 14:26:44,050 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:26:44,050 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:26:48,292 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 14:26:48,294 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 14:26:48,296 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 14:26:48,297 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 14:26:48,299 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 14:26:48,301 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 14:26:48,306 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 14:26:48,308 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 14:26:48,309 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 14:26:48,873 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 14:27:02,238 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 14:27:02,238 question_parser 问题解析器初始化完成
+INFO 2025-04-05 14:27:02,239 views 问答系统组件初始化成功
+INFO 2025-04-05 14:27:08,740 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 14:27:08,741 views BERT分类器初始化成功
+INFO 2025-04-05 14:31:43,570 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:31:43,570 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:31:48,701 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+WARNING 2025-04-05 14:31:48,701 question_classifier 词典文件不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\dict/disease.txt
+WARNING 2025-04-05 14:31:48,702 question_classifier 词典文件不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\dict/department.txt
+WARNING 2025-04-05 14:31:48,702 question_classifier 词典文件不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\dict/check.txt
+WARNING 2025-04-05 14:31:48,703 question_classifier 词典文件不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\dict/drug.txt
+WARNING 2025-04-05 14:31:48,703 question_classifier 词典文件不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\dict/food.txt
+WARNING 2025-04-05 14:31:48,703 question_classifier 词典文件不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\dict/producer.txt
+WARNING 2025-04-05 14:31:48,704 question_classifier 词典文件不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\dict/symptom.txt
+WARNING 2025-04-05 14:31:48,704 question_classifier 词典文件不存在: D:\APP\001test\bishe_test\medkg-system\medkg_backend\nlp_module\dict/deny.txt
+INFO 2025-04-05 14:31:48,705 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 14:31:48,705 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 14:31:48,705 question_parser 问题解析器初始化完成
+INFO 2025-04-05 14:31:48,705 views 问答系统组件初始化成功
+INFO 2025-04-05 14:31:54,678 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 14:31:54,680 views BERT分类器初始化成功
+INFO 2025-04-05 14:53:18,109 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:53:18,109 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:53:22,543 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+WARNING 2025-04-05 14:53:22,544 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/disease.txt
+WARNING 2025-04-05 14:53:22,544 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/department.txt
+WARNING 2025-04-05 14:53:22,545 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/check.txt
+WARNING 2025-04-05 14:53:22,545 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/drug.txt
+WARNING 2025-04-05 14:53:22,546 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/food.txt
+WARNING 2025-04-05 14:53:22,546 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/producer.txt
+WARNING 2025-04-05 14:53:22,546 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/symptom.txt
+WARNING 2025-04-05 14:53:22,547 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/deny.txt
+INFO 2025-04-05 14:53:22,547 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 14:53:22,547 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 14:53:22,548 question_parser 问题解析器初始化完成
+INFO 2025-04-05 14:53:22,548 views 问答系统组件初始化成功
+INFO 2025-04-05 14:53:29,394 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 14:53:29,396 views BERT分类器初始化成功
+INFO 2025-04-05 14:55:07,063 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:55:07,063 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 14:55:12,576 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+WARNING 2025-04-05 14:55:12,577 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/disease.txt
+WARNING 2025-04-05 14:55:12,577 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/department.txt
+WARNING 2025-04-05 14:55:12,578 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/check.txt
+WARNING 2025-04-05 14:55:12,578 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/drug.txt
+WARNING 2025-04-05 14:55:12,578 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/food.txt
+WARNING 2025-04-05 14:55:12,579 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/producer.txt
+WARNING 2025-04-05 14:55:12,579 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/symptom.txt
+WARNING 2025-04-05 14:55:12,579 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\medkg_backend\nlp_module\dict/deny.txt
+INFO 2025-04-05 14:55:12,580 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 14:55:12,580 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 14:55:12,580 question_parser 问题解析器初始化完成
+INFO 2025-04-05 14:55:12,580 views 问答系统组件初始化成功
+INFO 2025-04-05 14:55:18,943 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 14:55:18,943 views BERT分类器初始化成功
+INFO 2025-04-05 15:02:03,211 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:02:03,211 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:02:08,926 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 15:02:08,929 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 15:02:08,931 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 15:02:08,933 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 15:02:08,935 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 15:02:08,936 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 15:02:08,942 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 15:02:08,944 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 15:02:08,945 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 15:02:09,468 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 15:02:22,688 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 15:02:22,690 question_parser 问题解析器初始化完成
+INFO 2025-04-05 15:02:22,690 views 问答系统组件初始化成功
+INFO 2025-04-05 15:02:29,222 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 15:02:29,222 views BERT分类器初始化成功
+INFO 2025-04-05 15:03:02,238 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:03:02,238 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:03:06,394 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+WARNING 2025-04-05 15:03:06,396 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\disease.txt
+WARNING 2025-04-05 15:03:06,396 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\department.txt
+WARNING 2025-04-05 15:03:06,396 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\check.txt
+WARNING 2025-04-05 15:03:06,397 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\drug.txt
+WARNING 2025-04-05 15:03:06,398 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\food.txt
+WARNING 2025-04-05 15:03:06,398 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\producer.txt
+WARNING 2025-04-05 15:03:06,399 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\symptom.txt
+WARNING 2025-04-05 15:03:06,399 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\deny.txt
+INFO 2025-04-05 15:03:06,399 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 15:03:06,400 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 15:03:06,400 question_parser 问题解析器初始化完成
+INFO 2025-04-05 15:03:06,400 views 问答系统组件初始化成功
+WARNING 2025-04-05 15:03:12,528 bert_classifier BERT模型路径不存在: D:\APP\001test\Graduation Design\medkg-system\models\bert-base-chinese-medical，将使用规则分类器
+WARNING 2025-04-05 15:03:12,529 views BERT模型不可用，将仅使用规则分类器
+INFO 2025-04-05 15:04:59,833 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:04:59,833 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:05:04,418 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+WARNING 2025-04-05 15:05:04,419 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\disease.txt
+WARNING 2025-04-05 15:05:04,419 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\department.txt
+WARNING 2025-04-05 15:05:04,419 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\check.txt
+WARNING 2025-04-05 15:05:04,419 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\drug.txt
+WARNING 2025-04-05 15:05:04,419 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\food.txt
+WARNING 2025-04-05 15:05:04,420 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\producer.txt
+WARNING 2025-04-05 15:05:04,420 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\symptom.txt
+WARNING 2025-04-05 15:05:04,420 question_classifier 词典文件不存在: D:\APP\001test\Graduation Design\medkg-system\models\dict\deny.txt
+INFO 2025-04-05 15:05:04,420 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 15:05:04,421 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 15:05:04,421 question_parser 问题解析器初始化完成
+INFO 2025-04-05 15:05:04,421 views 问答系统组件初始化成功
+WARNING 2025-04-05 15:05:10,575 bert_classifier BERT模型路径不存在: D:\APP\001test\Graduation Design\medkg-system\models\bert-base-chinese-medical，将使用规则分类器
+WARNING 2025-04-05 15:05:10,585 views BERT模型不可用，将仅使用规则分类器
+INFO 2025-04-05 15:11:09,302 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:11:09,302 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:11:14,280 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 15:11:14,282 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 15:11:14,284 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 15:11:14,286 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 15:11:14,287 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 15:11:14,289 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 15:11:14,295 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 15:11:14,297 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 15:11:14,298 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 15:11:14,884 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 15:11:28,365 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 15:11:28,368 question_parser 问题解析器初始化完成
+INFO 2025-04-05 15:11:28,368 views 问答系统组件初始化成功
+INFO 2025-04-05 15:11:34,927 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 15:11:34,927 views BERT分类器初始化成功
+INFO 2025-04-05 15:21:11,877 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:21:11,877 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:21:16,639 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 15:21:16,642 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 15:21:16,643 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 15:21:16,645 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 15:21:16,647 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 15:21:16,649 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 15:21:16,654 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 15:21:16,656 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 15:21:16,657 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 15:21:17,186 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 15:21:30,495 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 15:21:30,496 question_parser 问题解析器初始化完成
+INFO 2025-04-05 15:21:30,496 views 问答系统组件初始化成功
+INFO 2025-04-05 15:21:36,637 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 15:21:36,637 views BERT分类器初始化成功
+INFO 2025-04-05 15:24:32,234 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:24:32,234 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 15:24:36,268 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 15:24:36,271 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 15:24:36,272 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 15:24:36,274 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 15:24:36,275 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 15:24:36,278 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 15:24:36,282 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 15:24:36,285 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 15:24:36,286 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 15:24:36,836 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 15:24:49,813 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 15:24:49,823 question_parser 问题解析器初始化完成
+INFO 2025-04-05 15:24:49,823 views 问答系统组件初始化成功
+INFO 2025-04-05 15:24:55,862 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 15:24:55,862 views BERT分类器初始化成功
+INFO 2025-04-05 15:24:55,870 views 知识图谱模块初始化成功
+INFO 2025-04-05 15:52:51,466 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 15:52:51,466 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 15:52:51,470 views 收到问题: 糖尿病有什么症状？
+ERROR 2025-04-05 15:52:51,486 views 处理问题时发生异常: No module named 'redis'
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 75, in medical_qa
+    result = process_question(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\performance_monitor.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 110, in process_question
+    cached_result = CacheManager.get_cached_result(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\cache_manager.py", line 59, in get_cached_result
+    result = cache.get(cache_key)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 187, in get
+    return self._cache.get(key, default)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 172, in _cache
+    return self._class(self._servers, **self._options)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 39, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-04-05 15:52:51,492 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 15:52:51,492 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 15:52:51,492 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+ERROR 2025-04-05 15:52:51,492 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+INFO 2025-04-05 15:52:57,067 views 收到问题: 糖尿病有什么症状？
+ERROR 2025-04-05 15:52:57,069 views 处理问题时发生异常: No module named 'redis'
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 75, in medical_qa
+    result = process_question(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\performance_monitor.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 110, in process_question
+    cached_result = CacheManager.get_cached_result(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\cache_manager.py", line 59, in get_cached_result
+    result = cache.get(cache_key)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 187, in get
+    return self._cache.get(key, default)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 172, in _cache
+    return self._class(self._servers, **self._options)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 39, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-04-05 15:52:57,073 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 15:52:57,073 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 15:52:57,074 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+ERROR 2025-04-05 15:52:57,074 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+INFO 2025-04-05 15:53:01,882 views 收到问题: 高血压的治疗方法有哪些？
+ERROR 2025-04-05 15:53:01,884 views 处理问题时发生异常: No module named 'redis'
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 75, in medical_qa
+    result = process_question(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\performance_monitor.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 110, in process_question
+    cached_result = CacheManager.get_cached_result(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\cache_manager.py", line 59, in get_cached_result
+    result = cache.get(cache_key)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 187, in get
+    return self._cache.get(key, default)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 172, in _cache
+    return self._class(self._servers, **self._options)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 39, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-04-05 15:53:01,889 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 15:53:01,889 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 15:53:01,890 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+ERROR 2025-04-05 15:53:01,890 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+INFO 2025-04-05 16:36:26,402 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:36:26,402 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:36:30,678 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 16:36:30,681 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 16:36:30,683 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 16:36:30,685 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 16:36:30,686 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 16:36:30,689 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 16:36:30,695 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 16:36:30,697 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 16:36:30,698 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 16:36:31,219 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 16:36:46,069 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 16:36:46,070 question_parser 问题解析器初始化完成
+INFO 2025-04-05 16:36:46,070 views 问答系统组件初始化成功
+INFO 2025-04-05 16:36:53,136 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 16:36:53,136 views BERT分类器初始化成功
+INFO 2025-04-05 16:36:53,138 views 知识图谱模块初始化成功
+INFO 2025-04-05 16:37:33,301 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:37:33,301 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:37:33,305 views 收到问题: 解释一下糖尿病
+ERROR 2025-04-05 16:37:33,309 views 处理问题时发生异常: No module named 'redis'
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 75, in medical_qa
+    result = process_question(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\performance_monitor.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 110, in process_question
+    cached_result = CacheManager.get_cached_result(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\cache_manager.py", line 59, in get_cached_result
+    result = cache.get(cache_key)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 187, in get
+    return self._cache.get(key, default)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 172, in _cache
+    return self._class(self._servers, **self._options)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 39, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-04-05 16:37:33,315 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 16:37:33,315 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 16:37:33,316 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+ERROR 2025-04-05 16:37:33,316 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+INFO 2025-04-05 16:37:47,925 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:37:47,925 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:37:47,928 views 收到问题: 糖尿病有什么症状？
+ERROR 2025-04-05 16:37:47,929 views 处理问题时发生异常: No module named 'redis'
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 75, in medical_qa
+    result = process_question(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\performance_monitor.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\qa_api\views.py", line 110, in process_question
+    cached_result = CacheManager.get_cached_result(question)
+  File "D:\APP\001test\Graduation Design\medkg-system\medkg_backend\utils\cache_manager.py", line 59, in get_cached_result
+    result = cache.get(cache_key)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 187, in get
+    return self._cache.get(key, default)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 172, in _cache
+    return self._class(self._servers, **self._options)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\cache\backends\redis.py", line 39, in __init__
+    import redis
+ModuleNotFoundError: No module named 'redis'
+ERROR 2025-04-05 16:37:47,934 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 16:37:47,934 log Internal Server Error: /api/qa/medical_qa/
+ERROR 2025-04-05 16:37:47,935 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+ERROR 2025-04-05 16:37:47,935 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 500 96
+INFO 2025-04-05 16:47:25,173 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:47:25,173 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:47:29,267 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 16:47:29,270 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 16:47:29,271 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 16:47:29,272 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 16:47:29,274 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 16:47:29,276 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 16:47:29,281 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 16:47:29,283 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 16:47:29,284 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 16:47:29,898 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 16:47:43,413 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 16:47:43,414 question_parser 问题解析器初始化完成
+INFO 2025-04-05 16:47:43,414 views 问答系统组件初始化成功
+INFO 2025-04-05 16:47:49,953 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 16:47:49,953 views BERT分类器初始化成功
+INFO 2025-04-05 16:47:49,957 views 知识图谱模块初始化成功
+INFO 2025-04-05 16:48:26,091 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:48:26,091 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:48:29,807 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 16:48:29,809 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 16:48:29,810 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 16:48:29,812 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 16:48:29,814 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 16:48:29,816 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 16:48:29,822 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 16:48:29,824 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 16:48:29,825 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 16:48:30,372 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 16:48:43,325 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 16:48:43,328 question_parser 问题解析器初始化完成
+INFO 2025-04-05 16:48:43,329 views 问答系统组件初始化成功
+INFO 2025-04-05 16:48:49,397 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 16:48:49,398 views BERT分类器初始化成功
+INFO 2025-04-05 16:48:49,403 views 知识图谱模块初始化成功
+INFO 2025-04-05 16:49:06,829 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:49:06,829 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:49:06,835 views 收到问题: 糖尿病有什么症状？
+ERROR 2025-04-05 16:49:06,972 neo4j_client Neo4j查询失败 (0.1241秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 16:49:06,982 neo4j_client Neo4j查询失败 (0.0090秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 16:49:06,992 neo4j_client Neo4j查询失败 (0.0085秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"]
+参数: {}
+INFO 2025-04-05 16:49:06,996 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 115
+INFO 2025-04-05 16:49:06,996 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 115
+INFO 2025-04-05 16:49:30,542 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:49:30,542 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:49:30,544 views 收到问题: 介绍一下糖尿病
+ERROR 2025-04-05 16:49:30,559 neo4j_client Neo4j查询失败 (0.0133秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 16:49:30,570 neo4j_client Neo4j查询失败 (0.0090秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 16:49:30,579 neo4j_client Neo4j查询失败 (0.0077秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"]
+参数: {}
+INFO 2025-04-05 16:49:30,581 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 109
+INFO 2025-04-05 16:49:30,581 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 109
+INFO 2025-04-05 16:52:32,843 autoreload D:\APP\001test\Graduation Design\medkg-system\medkg_backend\kg_module\neo4j_client.py changed, reloading.
+INFO 2025-04-05 16:52:32,843 autoreload D:\APP\001test\Graduation Design\medkg-system\medkg_backend\kg_module\neo4j_client.py changed, reloading.
+INFO 2025-04-05 16:52:34,447 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:52:34,447 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:52:38,202 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 16:52:38,206 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 16:52:38,207 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 16:52:38,209 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 16:52:38,210 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 16:52:38,212 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 16:52:38,217 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 16:52:38,219 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 16:52:38,220 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 16:52:38,823 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 16:52:52,408 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 16:52:52,408 question_parser 问题解析器初始化完成
+INFO 2025-04-05 16:52:52,409 views 问答系统组件初始化成功
+INFO 2025-04-05 16:52:58,992 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 16:52:58,992 views BERT分类器初始化成功
+INFO 2025-04-05 16:52:58,995 views 知识图谱模块初始化成功
+INFO 2025-04-05 16:53:08,103 autoreload D:\APP\001test\Graduation Design\medkg-system\medkg_backend\kg_module\views.py changed, reloading.
+INFO 2025-04-05 16:53:08,103 autoreload D:\APP\001test\Graduation Design\medkg-system\medkg_backend\kg_module\views.py changed, reloading.
+INFO 2025-04-05 16:53:09,639 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:53:09,639 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 16:53:13,437 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 16:53:13,440 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 16:53:13,441 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 16:53:13,443 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 16:53:13,445 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 16:53:13,446 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 16:53:13,451 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 16:53:13,454 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 16:53:13,455 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 16:53:14,043 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 16:53:27,491 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 16:53:27,495 question_parser 问题解析器初始化完成
+INFO 2025-04-05 16:53:27,495 views 问答系统组件初始化成功
+INFO 2025-04-05 16:53:33,979 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 16:53:33,980 views BERT分类器初始化成功
+INFO 2025-04-05 16:53:33,989 views 知识图谱模块初始化成功
+INFO 2025-04-05 16:54:28,785 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:54:28,785 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:54:28,793 views 收到问题: 糖尿病有什么症状？
+ERROR 2025-04-05 16:54:28,800 neo4j_client Neo4j查询失败 (0.0070秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 16:54:28,809 neo4j_client Neo4j查询失败 (0.0061秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 16:54:28,815 neo4j_client Neo4j查询失败 (0.0050秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"]
+参数: {}
+INFO 2025-04-05 16:54:28,818 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 115
+INFO 2025-04-05 16:54:28,818 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 115
+INFO 2025-04-05 16:55:53,283 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:55:53,283 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:55:53,285 views 收到问题: 介绍一下糖尿病
+ERROR 2025-04-05 16:55:53,293 neo4j_client Neo4j查询失败 (0.0074秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 16:55:53,302 neo4j_client Neo4j查询失败 (0.0073秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 16:55:53,313 neo4j_client Neo4j查询失败 (0.0085秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"]
+参数: {}
+INFO 2025-04-05 16:55:53,316 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 109
+INFO 2025-04-05 16:55:53,316 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 109
+INFO 2025-04-05 16:56:42,552 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:56:42,552 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 16:56:42,554 views 收到问题: 介绍一下肺结核
+ERROR 2025-04-05 16:56:42,560 neo4j_client Neo4j查询失败 (0.0060秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease) WHERE m.name = '肺结核' RETURN m.name, m.desc"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease) WHERE m.name = '肺结核' RETURN m.name, m.desc"]
+参数: {}
+INFO 2025-04-05 16:56:42,563 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 109
+INFO 2025-04-05 16:56:42,563 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 109
+INFO 2025-04-05 17:02:23,537 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 17:02:23,537 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 17:02:23,539 views 收到问题: 糖尿病有什么症状？
+ERROR 2025-04-05 17:02:23,545 neo4j_client Neo4j查询失败 (0.0048秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 17:02:23,551 neo4j_client Neo4j查询失败 (0.0040秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 17:02:23,559 neo4j_client Neo4j查询失败 (0.0058秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"]
+参数: {}
+INFO 2025-04-05 17:02:23,561 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 115
+INFO 2025-04-05 17:02:23,561 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 115
+INFO 2025-04-05 17:02:43,929 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 17:02:43,929 basehttp "OPTIONS /api/qa/medical_qa/ HTTP/1.1" 200 0
+INFO 2025-04-05 17:02:43,930 views 收到问题: 糖尿病有什么并发症
+ERROR 2025-04-05 17:02:43,938 neo4j_client Neo4j查询失败 (0.0073秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 17:02:43,944 neo4j_client Neo4j查询失败 (0.0040秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 17:02:43,951 neo4j_client Neo4j查询失败 (0.0041秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:acompany_with]->(n:Disease) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name", "MATCH (m:Disease)<-[r:acompany_with]-(n:Disease) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:acompany_with]->(n:Disease) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name", "MATCH (m:Disease)<-[r:acompany_with]-(n:Disease) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 17:02:43,959 neo4j_client Neo4j查询失败 (0.0059秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"]
+参数: {}
+INFO 2025-04-05 17:02:43,962 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 115
+INFO 2025-04-05 17:02:43,962 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 115
+INFO 2025-04-05 17:32:28,746 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 17:32:28,746 autoreload Watching for file changes with StatReloader
+INFO 2025-04-05 17:32:32,802 neo4j_client 连接到Neo4j数据库: bolt://localhost:7687
+INFO 2025-04-05 17:32:32,807 question_classifier 已加载disease词典，共8807个词
+INFO 2025-04-05 17:32:32,808 question_classifier 已加载department词典，共54个词
+INFO 2025-04-05 17:32:32,810 question_classifier 已加载check词典，共3353个词
+INFO 2025-04-05 17:32:32,813 question_classifier 已加载drug词典，共3828个词
+INFO 2025-04-05 17:32:32,814 question_classifier 已加载food词典，共4870个词
+INFO 2025-04-05 17:32:32,817 question_classifier 已加载producer词典，共17201个词
+INFO 2025-04-05 17:32:32,823 question_classifier 已加载symptom词典，共5998个词
+INFO 2025-04-05 17:32:32,823 question_classifier 已加载deny词典，共37个词
+INFO 2025-04-05 17:32:33,434 question_classifier 已将医疗词典加入jieba分词
+INFO 2025-04-05 17:32:47,742 question_classifier 问题分类器初始化完成
+INFO 2025-04-05 17:32:47,743 question_parser 问题解析器初始化完成
+INFO 2025-04-05 17:32:47,743 views 问答系统组件初始化成功
+INFO 2025-04-05 17:32:55,886 bert_classifier BERT问题分类器初始化成功
+INFO 2025-04-05 17:32:55,887 views BERT分类器初始化成功
+INFO 2025-04-05 17:32:55,894 views 知识图谱模块初始化成功
+INFO 2025-04-05 17:34:07,537 views 收到问题: 糖尿病
+ERROR 2025-04-05 17:34:07,545 neo4j_client Neo4j查询失败 (0.0074秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE m.name = '糖尿病' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 17:34:07,549 neo4j_client Neo4j查询失败 (0.0040秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) WHERE n.name = '糖尿' RETURN m.name, r.name, n.name"]
+参数: {}
+ERROR 2025-04-05 17:34:07,553 neo4j_client Neo4j查询失败 (0.0040秒): {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '[': expected 'FOREACH', 'ORDER BY', 'CALL', 'CREATE', 'LOAD CSV', 'DELETE', 'DETACH', 'FINISH', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REMOVE', 'RETURN', 'SET', 'SKIP', 'UNWIND', 'USE' or 'WITH' (line 1, column 48 (offset: 47))
+"CALL apoc.util.sleep(0) WITH 1 as dummy CALL { ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"] } WITH * LIMIT 1000"
+                                                ^}
+查询: ["MATCH (m:Disease) WHERE m.name = '糖尿病' RETURN m.name, m.desc"]
+参数: {}
+INFO 2025-04-05 17:34:07,556 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 97
+INFO 2025-04-05 17:34:07,556 basehttp "POST /api/qa/medical_qa/ HTTP/1.1" 200 97
