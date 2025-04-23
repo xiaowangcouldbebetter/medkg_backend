@@ -72,3 +72,31 @@ class SystemLog(models.Model):
     message = models.TextField()  # 日志消息
     created_at = models.DateTimeField(auto_now_add=True)
     trace = models.TextField(null=True, blank=True)  # 错误追踪信息
+
+
+# 用户反馈模型
+class UserBug(models.Model):
+    """
+    用户反馈的bug和建议
+    """
+    class Meta:
+        db_table = 'accounts_user_bug'
+    
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    title = models.CharField(max_length=200)  # 反馈标题
+    content = models.TextField()  # 反馈内容
+    bug_type = models.CharField(max_length=20, choices=[
+        ('bug', '系统错误'),
+        ('suggestion', '功能建议'),
+        ('other', '其他')
+    ])
+    status = models.CharField(max_length=20, choices=[
+        ('pending', '待处理'),
+        ('processing', '处理中'),
+        ('resolved', '已解决'),
+        ('rejected', '不予处理')
+    ], default='pending')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    ip_address = models.GenericIPAddressField(null=True, blank=True)
+    admin_remarks = models.TextField(null=True, blank=True)  # 管理员备注

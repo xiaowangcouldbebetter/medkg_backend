@@ -24,6 +24,12 @@ class Neo4jClient:
         self._driver.close()
         print("Connection closed.")
 
+    def execute_query(self, query, parameters=None):
+        """执行单个Cypher查询"""
+        with self._driver.session() as session:
+            result = session.run(query, parameters or {})
+            return result.data()
+
     def execute_query_set(self, query_set):
         """执行查询集合"""
         results = []
@@ -37,6 +43,28 @@ class Neo4jClient:
                         print(f"执行查询失败: {cypher}\n错误信息: {str(e)}")
                         continue
         return self._format_results(results)
+
+    def create_entity(self, label, properties):
+        """创建实体节点"""
+        query = f"""
+        CREATE (n:{label} $properties)
+        RETURN n
+        """
+        return self.execute_query(query, {"properties": properties})
+        
+    def create_relation(self, start_label, start_props, end_label, end_props, rel_type, rel_props=None):
+        """创建实体关系"""
+        query = f"""
+        MATCH (a:{start_label}), (b:{end_label})
+        WHERE a.name = $start_name AND b.name = $end_name
+        CREATE (a)-[r:{rel_type} $rel_props]->(b)
+        RETURN a, r, b
+        """
+        return self.execute_query(query, {
+            "start_name": start_props["name"],
+            "end_name": end_props["name"],
+            "rel_props": rel_props or {}
+        })
 
     def _format_results(self, raw_data):
         """统一格式化查询结果
@@ -56,7 +84,7 @@ class Neo4jClient:
             properties = {
                 key.split('.')[1]: value
                 for key, value in item.items()
-                if key.startswith('m.')
+                if key.startswith('m.') and key != 'm.name'
             }
 
             # 收集关系数据
@@ -64,7 +92,7 @@ class Neo4jClient:
                 'source': main_entity,
                 'relation': item.get('r.name', ''),
                 'target': item.get('n.name', '')
-            } if 'r.name' in item else None
+            } if 'r.name' in item and 'n.name' in item else None
 
             formatted.append({
                 'main_entity': main_entity,

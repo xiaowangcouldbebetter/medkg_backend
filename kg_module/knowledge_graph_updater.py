@@ -9,6 +9,8 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
+import json
+import csv
 from .neo4j_client import Neo4jClient
 from accounts.views import log_system_event
 from django.conf import settings
@@ -207,4 +209,330 @@ class KnowledgeGraphUpdater:
             f"知识图谱更新流程完成，耗时: {elapsed_time:.2f}秒，结果: {result['message']}"
         )
         
-        return result 
+        return result
+        
+    def process_json_file(self, file_path):
+        """
+        处理JSON格式的文件，更新知识图谱
+        
+        Args:
+            file_path: JSON文件路径
+            
+        Returns:
+            dict: 更新结果统计
+        """
+        try:
+            # 确保neo4j_client已初始化
+            if not self.neo4j_client:
+                self.neo4j_client = Neo4jClient(**settings.NEO4J_CONFIG)
+                
+            start_time = datetime.now()
+            print(f"[{start_time}] 开始处理JSON文件: {file_path}")
+            
+            # 读取JSON文件
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                
+            # 统计添加的节点和关系数量
+            nodes_added = 0
+            relations_added = 0
+            
+            # 处理数据，更新知识图谱
+            # 假设JSON文件包含一个疾病列表，每个疾病包含症状、药物等信息
+            for item in data:
+                # 提取实体名称
+                if 'name' not in item:
+                    continue
+                    
+                entity_name = item['name']
+                entity_type = item.get('type', 'Disease')  # 默认为疾病类型
+                
+                # 提取实体属性
+                properties = {k: v for k, v in item.items() if k not in ['name', 'type', 'relations']}
+                
+                # 创建节点
+                self._create_entity(entity_type, entity_name, properties)
+                nodes_added += 1
+                
+                # 处理关系
+                if 'relations' in item and isinstance(item['relations'], list):
+                    for relation in item['relations']:
+                        if 'target' in relation and 'type' in relation:
+                            target_name = relation['target']
+                            relation_type = relation['type']
+                            target_type = relation.get('target_type', 'Entity')
+                            
+                            # 创建目标节点
+                            target_props = {}
+                            if 'target_properties' in relation and isinstance(relation['target_properties'], dict):
+                                target_props = relation['target_properties']
+                                
+                            self._create_entity(target_type, target_name, target_props)
+                            nodes_added += 1
+                            
+                            # 创建关系
+                            self._create_relation(entity_type, entity_name, target_type, target_name, relation_type)
+                            relations_added += 1
+            
+            end_time = datetime.now()
+            duration = (end_time - start_time).total_seconds()
+            print(f"[{end_time}] JSON文件处理完成，耗时: {duration}秒")
+            print(f"添加节点: {nodes_added}, 添加关系: {relations_added}")
+            
+            # 删除临时文件
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                
+            return {
+                'success': True,
+                'nodes_added': nodes_added,
+                'relations_added': relations_added,
+                'duration': duration
+            }
+            
+        except Exception as e:
+            print(f"处理JSON文件失败: {str(e)}")
+            traceback.print_exc()
+            return {
+                'success': False,
+                'error': str(e),
+                'nodes_added': 0,
+                'relations_added': 0
+            }
+    
+    def process_csv_file(self, file_path):
+        """
+        处理CSV格式的文件，更新知识图谱
+        
+        Args:
+            file_path: CSV文件路径
+            
+        Returns:
+            dict: 更新结果统计
+        """
+        try:
+            # 确保neo4j_client已初始化
+            if not self.neo4j_client:
+                self.neo4j_client = Neo4jClient(**settings.NEO4J_CONFIG)
+                
+            start_time = datetime.now()
+            print(f"[{start_time}] 开始处理CSV文件: {file_path}")
+            
+            # 使用pandas读取CSV文件
+            df = pd.read_csv(file_path)
+            
+            # 统计添加的节点和关系数量
+            nodes_added = 0
+            relations_added = 0
+            
+            # 假设CSV的前两列是实体和关系，后面的列是属性
+            if len(df.columns) < 3:
+                raise ValueError("CSV文件格式不正确，至少需要3列: 源实体, 关系类型, 目标实体")
+                
+            # 提取列名
+            source_col = df.columns[0]
+            relation_col = df.columns[1]
+            target_col = df.columns[2]
+            
+            # 遍历每一行，创建节点和关系
+            for _, row in df.iterrows():
+                source = row[source_col]
+                relation = row[relation_col]
+                target = row[target_col]
+                
+                if pd.isna(source) or pd.isna(target) or pd.isna(relation):
+                    continue
+                    
+                # 创建源节点和目标节点（如果不存在）
+                source_type = "Entity"
+                if "source_type" in df.columns and not pd.isna(row["source_type"]):
+                    source_type = row["source_type"]
+                    
+                target_type = "Entity"
+                if "target_type" in df.columns and not pd.isna(row["target_type"]):
+                    target_type = row["target_type"]
+                    
+                # 提取源节点属性
+                source_props = {}
+                for col in df.columns:
+                    if col.startswith("source_prop_") and not pd.isna(row[col]):
+                        prop_name = col.replace("source_prop_", "")
+                        source_props[prop_name] = row[col]
+                        
+                # 提取目标节点属性
+                target_props = {}
+                for col in df.columns:
+                    if col.startswith("target_prop_") and not pd.isna(row[col]):
+                        prop_name = col.replace("target_prop_", "")
+                        target_props[prop_name] = row[col]
+                
+                # 创建节点
+                self._create_entity(source_type, source, source_props)
+                nodes_added += 1
+                
+                self._create_entity(target_type, target, target_props)
+                nodes_added += 1
+                
+                # 创建关系
+                self._create_relation(source_type, source, target_type, target, relation)
+                relations_added += 1
+            
+            end_time = datetime.now()
+            duration = (end_time - start_time).total_seconds()
+            print(f"[{end_time}] CSV文件处理完成，耗时: {duration}秒")
+            print(f"添加节点: {nodes_added}, 添加关系: {relations_added}")
+            
+            # 删除临时文件
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                
+            return {
+                'success': True,
+                'nodes_added': nodes_added,
+                'relations_added': relations_added,
+                'duration': duration
+            }
+            
+        except Exception as e:
+            print(f"处理CSV文件失败: {str(e)}")
+            traceback.print_exc()
+            return {
+                'success': False,
+                'error': str(e),
+                'nodes_added': 0,
+                'relations_added': 0
+            }
+    
+    def process_txt_file(self, file_path):
+        """
+        处理TXT格式的文件，更新知识图谱
+        
+        Args:
+            file_path: TXT文件路径
+            
+        Returns:
+            dict: 更新结果统计
+        """
+        try:
+            # 确保neo4j_client已初始化
+            if not self.neo4j_client:
+                self.neo4j_client = Neo4jClient(**settings.NEO4J_CONFIG)
+                
+            start_time = datetime.now()
+            print(f"[{start_time}] 开始处理TXT文件: {file_path}")
+            
+            # 统计添加的节点和关系数量
+            nodes_added = 0
+            relations_added = 0
+            
+            # 读取TXT文件，假设每行是一个三元组：源实体,关系类型,目标实体
+            with open(file_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith('#'):
+                        continue
+                        
+                    parts = line.split(',')
+                    if len(parts) < 3:
+                        print(f"警告: 忽略无效行: {line}")
+                        continue
+                        
+                    source = parts[0].strip()
+                    relation = parts[1].strip()
+                    target = parts[2].strip()
+                    
+                    # 提取实体类型（如果有）
+                    source_type = "Entity"
+                    target_type = "Entity"
+                    
+                    if len(parts) > 3 and parts[3].strip():
+                        source_type = parts[3].strip()
+                    if len(parts) > 4 and parts[4].strip():
+                        target_type = parts[4].strip()
+                    
+                    # 创建节点
+                    self._create_entity(source_type, source, {})
+                    nodes_added += 1
+                    
+                    self._create_entity(target_type, target, {})
+                    nodes_added += 1
+                    
+                    # 创建关系
+                    self._create_relation(source_type, source, target_type, target, relation)
+                    relations_added += 1
+            
+            end_time = datetime.now()
+            duration = (end_time - start_time).total_seconds()
+            print(f"[{end_time}] TXT文件处理完成，耗时: {duration}秒")
+            print(f"添加节点: {nodes_added}, 添加关系: {relations_added}")
+            
+            # 删除临时文件
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                
+            return {
+                'success': True,
+                'nodes_added': nodes_added,
+                'relations_added': relations_added,
+                'duration': duration
+            }
+            
+        except Exception as e:
+            print(f"处理TXT文件失败: {str(e)}")
+            traceback.print_exc()
+            return {
+                'success': False,
+                'error': str(e),
+                'nodes_added': 0,
+                'relations_added': 0
+            }
+    
+    def _create_entity(self, entity_type, entity_name, properties):
+        """
+        创建实体节点
+        
+        Args:
+            entity_type: 实体类型
+            entity_name: 实体名称
+            properties: 实体属性
+        """
+        # 确保name属性存在
+        props = {'name': entity_name}
+        props.update(properties)
+        
+        # 创建Cypher查询
+        query = f"""
+        MERGE (n:{entity_type} {{name: $name}})
+        SET n += $properties
+        RETURN n
+        """
+        
+        # 执行查询
+        self.neo4j_client.execute_query(query, {
+            'name': entity_name,
+            'properties': props
+        })
+    
+    def _create_relation(self, source_type, source_name, target_type, target_name, relation_type):
+        """
+        创建实体关系
+        
+        Args:
+            source_type: 源实体类型
+            source_name: 源实体名称
+            target_type: 目标实体类型
+            target_name: 目标实体名称
+            relation_type: 关系类型
+        """
+        # 创建Cypher查询
+        query = f"""
+        MATCH (a:{source_type} {{name: $source_name}}), (b:{target_type} {{name: $target_name}})
+        MERGE (a)-[r:{relation_type}]->(b)
+        RETURN a, r, b
+        """
+        
+        # 执行查询
+        self.neo4j_client.execute_query(query, {
+            'source_name': source_name,
+            'target_name': target_name
+        }) 

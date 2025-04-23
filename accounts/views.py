@@ -3,6 +3,7 @@
 import json
 import datetime
 import logging
+import traceback
 
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -15,7 +16,9 @@ from rest_framework import status
 
 from utils.rsa_handler import decrypt_password, PUBLIC_KEY
 from utils.auth import generate_token, token_required
-from .models import User, Admin, UserLog, SystemLog
+from .models import User, Admin, UserLog, SystemLog, UserBug
+
+logger = logging.getLogger('accounts')
 
 
 @csrf_exempt
@@ -349,4 +352,208 @@ def log_system_event(level, module, message, trace=None):
             trace=trace
         )
     except Exception as e:
-        logging.error(f"Failed to log system event: {str(e)}")
+        print(f"记录系统日志失败: {str(e)}")
+
+# 记录用户聊天日志
+@csrf_exempt
+@api_view(['POST'])
+def record_chat_log(request):
+    """记录用户聊天日志的API接口"""
+    try:
+        data = request.data
+        question = data.get('question', '')
+        answer = data.get('answer', '')
+        status = data.get('status', 'success')
+        
+        # 获取用户信息（如果已登录）
+        user = None
+        if hasattr(request, 'user') and request.user.is_authenticated:
+            user = request.user
+        
+        # 获取IP地址
+        ip_address = get_client_ip(request)
+        
+        # 创建日志记录
+        UserLog.objects.create(
+            user=user,
+            question=question,
+            answer=answer,
+            status=status,
+            ip_address=ip_address
+        )
+        
+        return Response({'success': True, 'message': '日志记录成功'})
+    except Exception as e:
+        error_msg = f"记录用户聊天日志失败: {str(e)}"
+        log_system_event("ERROR", "ChatLog", error_msg, trace=traceback.format_exc())
+        return Response({
+            'success': False,
+            'message': error_msg
+        }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+# 辅助函数：获取客户端IP地址
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
+# 用户反馈提交
+@csrf_exempt
+@require_http_methods(['POST'])
+def submit_feedback(request):
+    try:
+        data = json.loads(request.body.decode('utf-8'))
+        title = data.get('title', '')
+        content = data.get('content', '')
+        bug_type = data.get('type', 'other')
+        user_id = data.get('user_id')
+        
+        # 验证数据
+        if not title or not content:
+            return JsonResponse({
+                'success': False,
+                'message': '反馈标题和内容不能为空'
+            }, status=400)
+            
+        # 获取用户（如果登录）
+        user = None
+        if user_id:
+            try:
+                user = User.objects.get(id=user_id)
+            except User.DoesNotExist:
+                pass
+                
+        # 创建反馈记录
+        UserBug.objects.create(
+            user=user,
+            title=title,
+            content=content,
+            bug_type=bug_type,
+            ip_address=get_client_ip(request)
+        )
+        
+        return JsonResponse({
+            'success': True,
+            'message': '反馈提交成功，感谢您的建议！'
+        })
+        
+    except json.JSONDecodeError:
+        return JsonResponse({
+            'success': False,
+            'message': '无效的请求数据格式'
+        }, status=400)
+        
+    except Exception as e:
+        error_msg = f"处理用户反馈失败: {str(e)}"
+        log_system_event("ERROR", "ACCOUNTS", error_msg, trace=traceback.format_exc())
+        return JsonResponse({
+            'success': False,
+            'message': '服务器内部错误，请稍后再试'
+        }, status=500)
+
+
+# 管理员获取用户反馈列表
+@csrf_exempt
+@require_http_methods(['GET'])
+def admin_feedback_list(request):
+    try:
+        # 权限验证可以在这里添加
+        
+        # 分页参数
+        page = int(request.GET.get('page', 1))
+        page_size = int(request.GET.get('page_size', 10))
+        status_filter = request.GET.get('status', None)
+        
+        # 查询数据
+        query = UserBug.objects.all().order_by('-created_at')
+        
+        # 应用过滤
+        if status_filter:
+            query = query.filter(status=status_filter)
+        
+        # 计算总数
+        total = query.count()
+        
+        # 分页
+        start = (page - 1) * page_size
+        end = start + page_size
+        feedbacks = query[start:end]
+        
+        # 格式化数据
+        result = []
+        for feedback in feedbacks:
+            result.append({
+                'id': feedback.id,
+                'title': feedback.title,
+                'content': feedback.content,
+                'bug_type': feedback.bug_type,
+                'status': feedback.status,
+                'created_at': feedback.created_at.strftime('%Y-%m-%d %H:%M:%S'),
+                'user_name': feedback.user.name if feedback.user else '匿名用户',
+                'ip_address': feedback.ip_address,
+                'admin_remarks': feedback.admin_remarks
+            })
+        
+        return JsonResponse({
+            'success': True,
+            'data': {
+                'total': total,
+                'page': page,
+                'page_size': page_size,
+                'results': result
+            }
+        })
+        
+    except Exception as e:
+        error_msg = f"获取用户反馈列表失败: {str(e)}"
+        log_system_event("ERROR", "ACCOUNTS", error_msg, trace=traceback.format_exc())
+        return JsonResponse({
+            'success': False,
+            'message': '服务器内部错误，请稍后再试'
+        }, status=500)
+
+
+# 管理员更新反馈状态
+@csrf_exempt
+@require_http_methods(['PUT','GET','POST'])
+def update_feedback_status(request, feedback_id):
+    try:
+        data = json.loads(request.body.decode('utf-8'))
+        status = data.get('status')
+        admin_remarks = data.get('admin_remarks', '')
+        
+        # 验证数据
+        if not status:
+            return JsonResponse({
+                'success': False,
+                'message': '状态不能为空'
+            }, status=400)
+            
+        # 查找并更新
+        feedback = UserBug.objects.get(id=feedback_id)
+        feedback.status = status
+        if admin_remarks:
+            feedback.admin_remarks = admin_remarks
+        feedback.save()
+        
+        return JsonResponse({
+            'success': True,
+            'message': '反馈状态更新成功'
+        })
+        
+    except UserBug.DoesNotExist:
+        return JsonResponse({
+            'success': False,
+            'message': '未找到指定的反馈记录'
+        }, status=404)
+        
+    except Exception as e:
+        error_msg = f"更新反馈状态失败: {str(e)}"
+        log_system_event("ERROR", "ACCOUNTS", error_msg, trace=traceback.format_exc())
+        return JsonResponse({
+            'success': False,
+            'message': '服务器内部错误，请稍后再试'
+        }, status=500)

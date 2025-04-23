@@ -1,0 +1,750 @@
+INFO 2025-04-08 11:41:00,978 autoreload 10644 11216 Watching for file changes with StatReloader
+INFO 2025-04-08 11:57:22,144 basehttp 10644 2568 "GET /api/public-key/ HTTP/1.1" 200 481
+INFO 2025-04-08 11:58:14,493 basehttp 10644 20912 "POST /api/admin/login/ HTTP/1.1" 200 100
+INFO 2025-04-08 11:58:17,620 basehttp 10644 20924 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-08 11:59:13,236 basehttp 10644 22324 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 1922
+INFO 2025-04-08 11:59:13,237 basehttp 10644 22328 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 15013
+INFO 2025-04-08 11:59:13,248 basehttp 10644 22336 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-08 11:59:13,260 basehttp 10644 22340 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-08 11:59:50,845 basehttp 10644 21088 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-08 11:59:50,856 basehttp 10644 21084 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 4637
+INFO 2025-04-08 11:59:50,865 basehttp 10644 1156 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-08 11:59:50,892 basehttp 10644 21928 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 367
+INFO 2025-04-08 11:59:50,905 basehttp 10644 2300 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-08 12:02:33,956 basehttp 10644 18332 "POST /api/login/ HTTP/1.1" 200 346
+INFO 2025-04-08 12:03:27,221 basehttp 10644 21868 "POST /api/qa/ HTTP/1.1" 200 3411
+INFO 2025-04-08 12:03:27,260 basehttp 10644 21456 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-08 12:03:39,752 basehttp 10644 14928 "POST /api/qa/ HTTP/1.1" 200 2769
+INFO 2025-04-08 12:03:39,782 basehttp 10644 9260 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-08 12:03:52,758 basehttp 10644 21712 "POST /api/qa/ HTTP/1.1" 200 19131
+INFO 2025-04-08 12:03:52,780 basehttp 10644 8256 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-08 12:08:01,584 basehttp 10644 22376 "POST /api/qa/ HTTP/1.1" 200 1848
+INFO 2025-04-08 12:08:01,610 basehttp 10644 10412 "POST /api/logs/chat/ HTTP/1.1" 200 47
+WARNING 2025-04-08 12:10:39,469 log 10644 2772 Not Found: /api/api/logout/
+WARNING 2025-04-08 12:10:39,470 basehttp 10644 2772 "POST /api/api/logout/ HTTP/1.1" 404 5039
+INFO 2025-04-08 12:10:39,509 basehttp 10644 22456 "GET /api/public-key/ HTTP/1.1" 200 481
+INFO 2025-04-08 12:16:10,475 basehttp 10644 21144 "POST /api/login/ HTTP/1.1" 200 346
+INFO 2025-04-08 12:16:14,243 basehttp 10644 11228 "POST /api/logout/ HTTP/1.1" 200 58
+INFO 2025-04-08 12:16:14,273 basehttp 10644 4208 "GET /api/public-key/ HTTP/1.1" 200 481
+INFO 2025-04-08 12:16:41,614 basehttp 10644 9248 "POST /api/logout/ HTTP/1.1" 200 58
+INFO 2025-04-08 12:16:41,641 basehttp 10644 2560 "GET /api/public-key/ HTTP/1.1" 200 481
+INFO 2025-04-15 22:19:58,637 autoreload 19084 2372 Watching for file changes with StatReloader
+INFO 2025-04-15 22:20:20,935 basehttp 19084 6424 "POST /api/logout/ HTTP/1.1" 200 58
+INFO 2025-04-15 22:20:20,965 basehttp 19084 10352 "GET /api/public-key/ HTTP/1.1" 200 481
+INFO 2025-04-15 22:21:33,983 basehttp 19084 16024 "POST /api/login/ HTTP/1.1" 200 346
+INFO 2025-04-15 22:22:12,984 basehttp 19084 17100 "POST /api/admin/login/ HTTP/1.1" 200 100
+INFO 2025-04-15 22:22:15,917 basehttp 19084 15616 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-15 22:22:40,897 basehttp 19084 18864 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 1036
+INFO 2025-04-15 22:22:40,897 basehttp 19084 2388 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 23085
+INFO 2025-04-15 22:22:40,910 basehttp 19084 10752 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:22:40,922 basehttp 19084 12656 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:22:48,590 basehttp 19084 15836 "POST /api/qa/ HTTP/1.1" 200 20751
+INFO 2025-04-15 22:22:48,610 basehttp 19084 11492 "POST /api/logs/chat/ HTTP/1.1" 200 47
+WARNING 2025-04-15 22:54:26,640 log 19084 1340 Unauthorized: /api/admin/login/
+WARNING 2025-04-15 22:54:26,641 basehttp 19084 1340 "POST /api/admin/login/ HTTP/1.1" 401 42
+INFO 2025-04-15 22:54:33,896 basehttp 19084 21352 "POST /api/admin/login/ HTTP/1.1" 200 100
+INFO 2025-04-15 22:54:36,053 basehttp 19084 20488 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-15 22:54:51,114 basehttp 19084 22428 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 14941
+INFO 2025-04-15 22:55:08,058 basehttp 19084 17176 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 33088
+INFO 2025-04-15 22:55:08,067 basehttp 19084 14520 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 9457
+INFO 2025-04-15 22:55:08,083 basehttp 19084 8404 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:55:08,095 basehttp 19084 7960 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:56:30,804 basehttp 19084 9340 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:56:30,804 basehttp 19084 2216 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 4637
+INFO 2025-04-15 22:56:30,816 basehttp 19084 20252 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:56:30,830 basehttp 19084 14052 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 367
+INFO 2025-04-15 22:56:30,843 basehttp 19084 17080 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:56:56,684 basehttp 19084 7204 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 33088
+INFO 2025-04-15 22:56:56,693 basehttp 19084 13876 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 9457
+INFO 2025-04-15 22:56:56,706 basehttp 19084 6420 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:56:56,715 basehttp 19084 22364 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 22:57:00,424 basehttp 19084 11044 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-15 22:58:54,609 basehttp 19084 21012 "GET /admin HTTP/1.1" 301 0
+INFO 2025-04-15 22:58:54,737 basehttp 19084 17992 "GET /admin/ HTTP/1.1" 200 8502
+INFO 2025-04-15 22:58:55,039 basehttp 19084 12072 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-15 22:58:55,040 basehttp 19084 6768 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-04-15 22:58:55,074 basehttp 19084 17992 "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-04-15 22:58:55,077 basehttp 19084 21044 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-04-15 22:58:55,087 basehttp 19084 17172 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-04-15 22:58:55,090 basehttp 19084 22056 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-04-15 22:58:55,092 basehttp 19084 17172 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-15 22:58:55,099 basehttp 19084 17172 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-04-15 22:58:55,099 basehttp 19084 22056 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+WARNING 2025-04-15 22:58:55,148 log 19084 22056 Not Found: /favicon.ico
+WARNING 2025-04-15 22:58:55,149 basehttp 19084 22056 "GET /favicon.ico HTTP/1.1" 404 5026
+INFO 2025-04-15 23:01:36,788 basehttp 19084 22056 "GET /admin/accounts/admin/ HTTP/1.1" 200 10674
+INFO 2025-04-15 23:01:36,821 basehttp 19084 22056 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-04-15 23:01:36,832 basehttp 19084 22056 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-04-15 23:01:36,832 basehttp 19084 17992 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-15 23:01:36,832 basehttp 19084 12072 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-04-15 23:01:36,832 basehttp 19084 6768 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-15 23:01:36,839 basehttp 19084 17172 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-15 23:01:36,840 basehttp 19084 17992 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-15 23:01:36,840 basehttp 19084 22056 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-15 23:01:36,843 basehttp 19084 21044 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-15 23:01:36,846 basehttp 19084 12072 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-15 23:01:36,852 basehttp 19084 12072 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-04-15 23:01:36,863 basehttp 19084 12072 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-04-15 23:01:39,093 basehttp 19084 12072 "GET /admin/accounts/admin/2/change/ HTTP/1.1" 200 12422
+INFO 2025-04-15 23:01:39,133 basehttp 19084 22056 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-15 23:01:39,133 basehttp 19084 17992 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-04-15 23:01:39,133 basehttp 19084 17172 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-04-15 23:01:39,133 basehttp 19084 12072 "GET /static/admin/css/forms.css HTTP/1.1" 200 8710
+INFO 2025-04-15 23:01:39,137 basehttp 19084 21044 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-15 23:01:39,142 basehttp 19084 17992 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2025-04-15 23:01:39,144 basehttp 19084 21044 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-15 23:01:39,180 basehttp 19084 21044 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-04-15 23:01:39,181 basehttp 19084 17992 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-04-15 23:35:07,268 basehttp 19084 22224 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-15 23:35:57,417 basehttp 19084 13752 "POST /api/qa/ HTTP/1.1" 200 2220
+INFO 2025-04-15 23:35:57,449 basehttp 19084 18228 "POST /api/logs/chat/ HTTP/1.1" 200 47
+ERROR 2025-04-15 23:36:08,537 log 19084 8800 Internal Server Error: /api/qa/
+ERROR 2025-04-15 23:36:08,537 basehttp 19084 8800 "POST /api/qa/ HTTP/1.1" 500 107
+INFO 2025-04-15 23:36:43,210 basehttp 19084 21204 "POST /api/qa/ HTTP/1.1" 200 840
+INFO 2025-04-15 23:36:43,234 basehttp 19084 9496 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-15 23:36:55,719 basehttp 19084 4924 "POST /api/qa/ HTTP/1.1" 200 2646
+ERROR 2025-04-15 23:36:55,817 log 19084 13348 Internal Server Error: /api/logs/chat/
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1366, "Incorrect string value: '\\xF0\\x9F\\x8D\\xBD\\xEF\\xB8...' for column 'answer' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\code\medkg_backend\accounts\views.py", line 375, in record_chat_log
+    UserLog.objects.create(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1366, "Incorrect string value: '\\xF0\\x9F\\x8D\\xBD\\xEF\\xB8...' for column 'answer' at row 1")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\code\medkg_backend\accounts\views.py", line 390, in record_chat_log
+    }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+AttributeError: 'str' object has no attribute 'HTTP_500_INTERNAL_SERVER_ERROR'
+ERROR 2025-04-15 23:36:55,835 basehttp 19084 13348 "POST /api/logs/chat/ HTTP/1.1" 500 331027
+INFO 2025-04-15 23:37:20,583 basehttp 19084 3824 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 9746
+INFO 2025-04-15 23:37:20,592 basehttp 19084 21820 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 23:37:20,605 basehttp 19084 7468 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 23:37:20,619 basehttp 19084 8892 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4918
+INFO 2025-04-15 23:37:20,633 basehttp 19084 7384 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 23:37:26,855 basehttp 19084 22296 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 30158
+INFO 2025-04-15 23:37:26,865 basehttp 19084 3636 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 1396
+INFO 2025-04-15 23:37:26,878 basehttp 19084 19868 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 23:37:26,888 basehttp 19084 10436 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 23:37:28,826 basehttp 19084 10548 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 23:37:28,826 basehttp 19084 2892 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 9746
+INFO 2025-04-15 23:37:28,836 basehttp 19084 22396 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-15 23:37:28,845 basehttp 19084 20360 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4918
+INFO 2025-04-15 23:37:28,860 basehttp 19084 13348 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 22:47:42,275 autoreload 24136 34680 Watching for file changes with StatReloader
+INFO 2025-04-21 22:48:40,733 basehttp 24136 36276 "GET /api/public-key/ HTTP/1.1" 200 481
+INFO 2025-04-21 22:48:50,331 basehttp 24136 36260 "POST /api/login/ HTTP/1.1" 200 346
+INFO 2025-04-21 22:48:53,873 views 24136 36256 User anonymous question: 糖尿病的症状有哪些？
+INFO 2025-04-21 22:48:54,509 basehttp 24136 36256 "POST /api/qa/ HTTP/1.1" 200 1810
+INFO 2025-04-21 22:48:54,528 basehttp 24136 25500 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-21 22:50:00,452 views 24136 36624 User anonymous question: 糖尿病吃什么药
+INFO 2025-04-21 22:50:00,808 basehttp 24136 36624 "POST /api/qa/ HTTP/1.1" 200 4994
+ERROR 2025-04-21 22:50:00,932 log 24136 7164 Internal Server Error: /api/logs/chat/
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1366, "Incorrect string value: '\\xF0\\x9F\\x8D\\xBD\\xEF\\xB8...' for column 'answer' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\code\medkg_backend\accounts\views.py", line 375, in record_chat_log
+    UserLog.objects.create(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1366, "Incorrect string value: '\\xF0\\x9F\\x8D\\xBD\\xEF\\xB8...' for column 'answer' at row 1")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\code\medkg_backend\accounts\views.py", line 390, in record_chat_log
+    }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+AttributeError: 'str' object has no attribute 'HTTP_500_INTERNAL_SERVER_ERROR'
+ERROR 2025-04-21 22:50:00,946 basehttp 24136 7164 "POST /api/logs/chat/ HTTP/1.1" 500 329855
+INFO 2025-04-21 22:50:25,102 views 24136 25484 User anonymous question: 糖尿病如何用药
+INFO 2025-04-21 22:50:25,143 basehttp 24136 25484 "POST /api/qa/ HTTP/1.1" 200 2828
+INFO 2025-04-21 22:50:25,165 basehttp 24136 36176 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-21 22:50:51,816 views 24136 2788 User anonymous question: 什么人容易得阳痿
+INFO 2025-04-21 22:50:51,906 basehttp 24136 2788 "POST /api/qa/ HTTP/1.1" 200 245
+INFO 2025-04-21 22:50:51,928 basehttp 24136 36436 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-21 22:51:07,557 views 24136 31804 User anonymous question: 糖尿病属于什么科
+INFO 2025-04-21 22:51:07,675 basehttp 24136 31804 "POST /api/qa/ HTTP/1.1" 200 158
+INFO 2025-04-21 22:51:07,694 basehttp 24136 34988 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-21 22:51:25,732 views 24136 36776 User anonymous question: 糖尿病应该检查什么项目
+INFO 2025-04-21 22:51:25,806 basehttp 24136 36776 "POST /api/qa/ HTTP/1.1" 200 2133
+INFO 2025-04-21 22:51:25,876 basehttp 24136 36304 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-21 22:51:59,704 views 24136 36776 User anonymous question: 糖尿病的病因
+INFO 2025-04-21 22:51:59,753 basehttp 24136 36776 "POST /api/qa/ HTTP/1.1" 200 2739
+INFO 2025-04-21 22:51:59,780 basehttp 24136 27504 "POST /api/logs/chat/ HTTP/1.1" 200 47
+WARNING 2025-04-21 22:52:23,352 log 24136 26720 Not Found: /api/admin/login/
+WARNING 2025-04-21 22:52:23,353 basehttp 24136 26720 "POST /api/admin/login/ HTTP/1.1" 404 54
+INFO 2025-04-21 22:52:28,618 basehttp 24136 26060 "POST /api/admin/login/ HTTP/1.1" 200 99
+INFO 2025-04-21 22:52:31,327 basehttp 24136 9340 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-21 22:52:41,097 basehttp 24136 27200 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 14941
+INFO 2025-04-21 22:52:45,209 basehttp 24136 17140 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 14804
+INFO 2025-04-21 22:52:45,209 basehttp 24136 27896 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 1466
+INFO 2025-04-21 22:52:45,221 basehttp 24136 31572 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-21 22:52:45,236 basehttp 24136 1452 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 22:52:49,397 basehttp 24136 36172 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 22:52:49,405 basehttp 24136 25484 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 14301
+INFO 2025-04-21 22:52:49,407 basehttp 24136 36612 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 22:52:49,420 basehttp 24136 36704 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4918
+INFO 2025-04-21 22:52:49,435 basehttp 24136 25888 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 22:53:11,344 basehttp 24136 36204 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 14804
+INFO 2025-04-21 22:53:11,344 basehttp 24136 33260 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 1466
+INFO 2025-04-21 22:53:11,359 basehttp 24136 30044 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-21 22:53:11,371 basehttp 24136 35540 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+WARNING 2025-04-21 22:54:05,596 log 24136 32692 Not Found: /api/api/user/info/
+WARNING 2025-04-21 22:54:05,597 basehttp 24136 32692 "GET /api/api/user/info/ HTTP/1.1" 404 5047
+WARNING 2025-04-21 22:54:39,742 log 24136 33640 Not Found: /api/api/user/info/
+WARNING 2025-04-21 22:54:39,746 basehttp 24136 33640 "GET /api/api/user/info/ HTTP/1.1" 404 5047
+INFO 2025-04-21 22:55:40,922 basehttp 24136 8584 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 14941
+INFO 2025-04-21 22:55:43,930 basehttp 24136 24140 "GET /api/kg/visualization/?limit=20 HTTP/1.1" 200 6002
+WARNING 2025-04-21 23:00:27,366 log 24136 37092 Bad Request: /api/kg/update/
+WARNING 2025-04-21 23:00:27,368 basehttp 24136 37092 "POST /api/kg/update/ HTTP/1.1" 400 87
+WARNING 2025-04-21 23:00:37,104 log 24136 37228 Bad Request: /api/kg/update/
+WARNING 2025-04-21 23:00:37,105 basehttp 24136 37228 "POST /api/kg/update/ HTTP/1.1" 400 87
+WARNING 2025-04-21 23:01:33,430 log 24136 36900 Bad Request: /api/kg/update/
+WARNING 2025-04-21 23:01:33,430 basehttp 24136 36900 "POST /api/kg/update/ HTTP/1.1" 400 87
+WARNING 2025-04-21 23:01:35,767 log 24136 36180 Bad Request: /api/kg/update/
+WARNING 2025-04-21 23:01:35,768 basehttp 24136 36180 "POST /api/kg/update/ HTTP/1.1" 400 87
+WARNING 2025-04-21 23:01:38,033 log 24136 33332 Bad Request: /api/kg/update/
+WARNING 2025-04-21 23:01:38,034 basehttp 24136 33332 "POST /api/kg/update/ HTTP/1.1" 400 87
+INFO 2025-04-21 23:01:45,283 basehttp 24136 37760 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 14804
+INFO 2025-04-21 23:01:45,293 basehttp 24136 36792 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 1466
+INFO 2025-04-21 23:01:45,307 basehttp 24136 37764 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-21 23:01:45,320 basehttp 24136 37768 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 23:01:47,991 basehttp 24136 29328 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 14941
+INFO 2025-04-21 23:13:07,827 basehttp 24136 35560 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-21 23:14:25,733 autoreload 24136 34680 D:\APP\001test\Graduation Design\code\medkg_backend\accounts\models.py changed, reloading.
+INFO 2025-04-21 23:14:26,895 autoreload 14268 30576 Watching for file changes with StatReloader
+INFO 2025-04-21 23:15:04,363 autoreload 14268 30576 D:\APP\001test\Graduation Design\code\medkg_backend\accounts\views.py changed, reloading.
+INFO 2025-04-21 23:15:05,275 autoreload 22936 31492 Watching for file changes with StatReloader
+INFO 2025-04-21 23:15:38,824 autoreload 22936 31492 D:\APP\001test\Graduation Design\code\medkg_backend\medkg_backend\urls.py changed, reloading.
+INFO 2025-04-21 23:15:39,745 autoreload 37312 11032 Watching for file changes with StatReloader
+INFO 2025-04-21 23:16:36,524 autoreload 37312 11032 D:\APP\001test\Graduation Design\code\medkg_backend\kg_module\views.py changed, reloading.
+INFO 2025-04-21 23:16:37,446 autoreload 34904 37320 Watching for file changes with StatReloader
+INFO 2025-04-21 23:18:00,392 autoreload 34904 37320 D:\APP\001test\Graduation Design\code\medkg_backend\kg_module\knowledge_graph_updater.py changed, reloading.
+INFO 2025-04-21 23:18:01,297 autoreload 24616 34604 Watching for file changes with StatReloader
+INFO 2025-04-21 23:18:20,801 autoreload 24616 34604 D:\APP\001test\Graduation Design\code\medkg_backend\qa_api\views.py changed, reloading.
+INFO 2025-04-21 23:18:21,711 autoreload 37796 37160 Watching for file changes with StatReloader
+INFO 2025-04-21 23:40:43,730 views 37796 34200 User anonymous question: 高血压如何预防？
+INFO 2025-04-21 23:40:43,777 basehttp 37796 34200 "POST /api/qa/ HTTP/1.1" 200 13743
+INFO 2025-04-21 23:40:43,847 basehttp 37796 37560 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-21 23:41:31,413 basehttp 37796 37828 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-21 23:41:34,041 basehttp 37796 37296 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-21 23:41:36,123 basehttp 37796 36792 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 23037
+INFO 2025-04-21 23:41:36,125 basehttp 37796 22656 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 7377
+INFO 2025-04-21 23:41:36,140 basehttp 37796 29784 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-21 23:41:36,151 basehttp 37796 34704 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 23:41:38,631 basehttp 37796 36016 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 23:41:38,631 basehttp 37796 36548 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 14301
+INFO 2025-04-21 23:41:38,641 basehttp 37796 35372 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 23:41:38,654 basehttp 37796 25468 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4918
+INFO 2025-04-21 23:41:38,666 basehttp 37796 25888 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 23:41:39,412 basehttp 37796 26804 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 23037
+INFO 2025-04-21 23:41:39,418 basehttp 37796 37584 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 7377
+INFO 2025-04-21 23:41:39,431 basehttp 37796 36540 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-21 23:41:39,443 basehttp 37796 27856 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-21 23:42:32,836 views 37796 26804 User anonymous question: 糖尿病
+INFO 2025-04-21 23:42:32,848 basehttp 37796 26804 "POST /api/qa/ HTTP/1.1" 200 2721
+INFO 2025-04-21 23:42:32,862 basehttp 37796 37584 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-21 23:42:38,227 views 37796 37512 User anonymous question: 百日咳
+INFO 2025-04-21 23:42:38,256 basehttp 37796 37512 "POST /api/qa/ HTTP/1.1" 200 2166
+INFO 2025-04-21 23:42:38,274 basehttp 37796 32524 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-21 23:42:42,003 views 37796 37696 User anonymous question: 阳痿
+INFO 2025-04-21 23:42:42,032 basehttp 37796 37696 "POST /api/qa/ HTTP/1.1" 200 1337
+INFO 2025-04-21 23:42:42,048 basehttp 37796 37456 "POST /api/logs/chat/ HTTP/1.1" 200 47
+WARNING 2025-04-21 23:44:05,520 log 37796 37600 Not Found: /api/api/api/user/feedback/
+WARNING 2025-04-21 23:44:05,524 basehttp 37796 37600 "POST /api/api/api/user/feedback/ HTTP/1.1" 404 6024
+WARNING 2025-04-21 23:44:33,240 log 37796 37180 Not Found: /api/api/api/user/feedback/
+WARNING 2025-04-21 23:44:33,244 basehttp 37796 37180 "POST /api/api/api/user/feedback/ HTTP/1.1" 404 6024
+ERROR 2025-04-21 23:47:10,665 log 37796 30576 Internal Server Error: /api/user/feedback/
+ERROR 2025-04-21 23:47:10,666 basehttp 37796 30576 "POST /api/user/feedback/ HTTP/1.1" 500 111
+INFO 2025-04-21 23:50:26,680 autoreload 38228 38116 Watching for file changes with StatReloader
+ERROR 2025-04-21 23:51:00,225 log 38228 38292 Internal Server Error: /api/user/feedback/
+ERROR 2025-04-21 23:51:00,226 basehttp 38228 38292 "POST /api/user/feedback/ HTTP/1.1" 500 111
+WARNING 2025-04-21 23:51:02,106 log 38228 35608 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-21 23:51:02,106 basehttp 38228 35608 "GET /api/user/feedback/ HTTP/1.1" 405 0
+INFO 2025-04-22 00:09:38,518 autoreload 39388 39392 Watching for file changes with StatReloader
+INFO 2025-04-22 00:10:04,662 basehttp 39388 36792 "POST /api/user/feedback/ HTTP/1.1" 200 116
+INFO 2025-04-22 00:10:13,340 basehttp 39388 39100 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:10:14,379 basehttp 39388 31856 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 24245
+INFO 2025-04-22 00:10:14,388 basehttp 39388 39156 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 813
+INFO 2025-04-22 00:10:14,401 basehttp 39388 39164 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-22 00:10:14,414 basehttp 39388 39144 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:10:15,242 basehttp 39388 28572 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 00:10:16,272 basehttp 39388 36996 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:10:16,282 basehttp 39388 36800 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:10:16,282 basehttp 39388 28676 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 23086
+INFO 2025-04-22 00:10:16,293 basehttp 39388 38596 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4757
+INFO 2025-04-22 00:10:16,306 basehttp 39388 38276 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:10:17,189 basehttp 39388 38856 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 24245
+INFO 2025-04-22 00:10:17,190 basehttp 39388 38616 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 813
+INFO 2025-04-22 00:10:17,213 basehttp 39388 38436 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-22 00:10:17,230 basehttp 39388 38320 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:10:20,360 basehttp 39388 37740 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 00:10:20,997 basehttp 39388 37592 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:10:22,390 basehttp 39388 27156 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 00:10:23,088 basehttp 39388 19948 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:10:24,171 basehttp 39388 33556 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:10:24,171 basehttp 39388 39140 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 23086
+INFO 2025-04-22 00:10:24,182 basehttp 39388 39276 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:10:24,196 basehttp 39388 39280 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4757
+INFO 2025-04-22 00:10:24,209 basehttp 39388 39236 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:10:24,605 basehttp 39388 39208 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+WARNING 2025-04-22 00:12:32,050 log 39388 34716 Not Found: /api/api/user/info/
+WARNING 2025-04-22 00:12:32,055 basehttp 39388 34716 "GET /api/api/user/info/ HTTP/1.1" 404 5999
+INFO 2025-04-22 00:16:51,028 basehttp 39388 38956 "GET /api/user/info/ HTTP/1.1" 200 175
+INFO 2025-04-22 00:17:03,995 basehttp 39388 34356 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 24245
+INFO 2025-04-22 00:17:04,008 basehttp 39388 39160 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 813
+INFO 2025-04-22 00:17:04,020 basehttp 39388 38000 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-22 00:17:04,030 basehttp 39388 38560 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:17:11,578 basehttp 39388 39012 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 23086
+INFO 2025-04-22 00:17:11,635 basehttp 39388 38704 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:17:11,644 basehttp 39388 35600 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:17:11,654 basehttp 39388 37108 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4757
+INFO 2025-04-22 00:17:11,665 basehttp 39388 37432 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:17:13,232 basehttp 39388 34704 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 24245
+INFO 2025-04-22 00:17:13,232 basehttp 39388 39788 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 813
+INFO 2025-04-22 00:17:13,243 basehttp 39388 39500 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-22 00:17:13,253 basehttp 39388 39348 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:17:16,282 basehttp 39388 26080 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:17:21,114 basehttp 39388 37988 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 00:17:23,424 basehttp 39388 39888 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 24245
+INFO 2025-04-22 00:17:23,433 basehttp 39388 38296 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 813
+INFO 2025-04-22 00:17:23,444 basehttp 39388 34920 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 195
+INFO 2025-04-22 00:17:23,456 basehttp 39388 39204 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:17:23,987 basehttp 39388 17252 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 23086
+INFO 2025-04-22 00:17:23,990 basehttp 39388 36536 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:17:24,002 basehttp 39388 39852 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:17:24,017 basehttp 39388 37852 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4757
+INFO 2025-04-22 00:17:24,030 basehttp 39388 39396 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:18:04,312 basehttp 39388 39272 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 00:19:26,257 basehttp 39388 38680 "GET /api/user/info/ HTTP/1.1" 200 175
+INFO 2025-04-22 00:27:26,359 basehttp 39388 39052 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:28:01,590 autoreload 27956 33844 Watching for file changes with StatReloader
+INFO 2025-04-22 00:28:55,750 basehttp 27956 36816 "POST /api/admin/login/ HTTP/1.1" 200 99
+INFO 2025-04-22 00:28:57,982 basehttp 27956 35976 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:36:58,593 basehttp 27956 31856 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:37:23,671 basehttp 27956 36472 "POST /api/user/feedback/ HTTP/1.1" 200 116
+WARNING 2025-04-22 00:44:35,671 log 27956 32720 Not Found: /api/api/kg/statistics/
+WARNING 2025-04-22 00:44:35,672 basehttp 27956 32720 "GET /api/api/kg/statistics/ HTTP/1.1" 404 6011
+WARNING 2025-04-22 00:45:55,767 log 27956 39068 Not Found: /api/api/kg/statistics/
+WARNING 2025-04-22 00:45:55,767 basehttp 27956 39068 "GET /api/api/kg/statistics/ HTTP/1.1" 404 6011
+WARNING 2025-04-22 00:46:08,352 log 27956 27824 Not Found: /api/api/kg/statistics/
+WARNING 2025-04-22 00:46:08,352 basehttp 27956 27824 "GET /api/api/kg/statistics/ HTTP/1.1" 404 6011
+WARNING 2025-04-22 00:46:11,561 log 27956 39604 Not Found: /api/api/kg/visualization/
+WARNING 2025-04-22 00:46:11,564 basehttp 27956 39604 "GET /api/api/kg/visualization/?limit=50 HTTP/1.1" 404 6029
+INFO 2025-04-22 00:46:12,576 basehttp 27956 36968 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 805
+INFO 2025-04-22 00:46:12,580 basehttp 27956 33492 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 24165
+INFO 2025-04-22 00:46:12,590 basehttp 27956 36748 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 187
+INFO 2025-04-22 00:46:12,601 basehttp 27956 25276 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:46:13,144 basehttp 27956 37724 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:46:13,144 basehttp 27956 23812 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 23086
+INFO 2025-04-22 00:46:13,155 basehttp 27956 26572 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:46:13,168 basehttp 27956 37220 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4757
+INFO 2025-04-22 00:46:13,180 basehttp 27956 26200 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:46:13,719 basehttp 27956 37660 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 805
+INFO 2025-04-22 00:46:13,722 basehttp 27956 38832 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 24165
+INFO 2025-04-22 00:46:13,729 basehttp 27956 39764 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 187
+INFO 2025-04-22 00:46:13,742 basehttp 27956 37840 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+WARNING 2025-04-22 00:46:14,448 log 27956 13300 Not Found: /api/api/kg/visualization/
+WARNING 2025-04-22 00:46:14,450 basehttp 27956 13300 "GET /api/api/kg/visualization/?limit=50 HTTP/1.1" 404 6029
+WARNING 2025-04-22 00:46:47,972 log 27956 38668 Not Found: /api/api/kg/statistics/
+WARNING 2025-04-22 00:46:47,973 basehttp 27956 38668 "GET /api/api/kg/statistics/ HTTP/1.1" 404 6011
+WARNING 2025-04-22 00:46:54,735 log 27956 37416 Not Found: /api/api/kg/statistics/
+WARNING 2025-04-22 00:46:54,736 basehttp 27956 37416 "GET /api/api/kg/statistics/ HTTP/1.1" 404 6011
+INFO 2025-04-22 00:48:29,042 basehttp 27956 38740 "GET /api/admin/logs/user/?status=success&limit=1 HTTP/1.1" 200 805
+INFO 2025-04-22 00:48:29,047 basehttp 27956 37524 "GET /api/admin/logs/user/?limit=10&offset=0 HTTP/1.1" 200 24165
+INFO 2025-04-22 00:48:29,054 basehttp 27956 38028 "GET /api/admin/logs/user/?status=not_found&limit=1 HTTP/1.1" 200 187
+INFO 2025-04-22 00:48:29,067 basehttp 27956 22056 "GET /api/admin/logs/user/?status=error&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:48:38,617 basehttp 27956 38300 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 23086
+INFO 2025-04-22 00:48:38,629 basehttp 27956 39364 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:48:38,644 basehttp 27956 39072 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 00:48:38,656 basehttp 27956 28212 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4757
+INFO 2025-04-22 00:48:38,671 basehttp 27956 38772 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+WARNING 2025-04-22 00:48:40,938 log 27956 28188 Not Found: /api/api/kg/statistics/
+WARNING 2025-04-22 00:48:40,941 basehttp 27956 28188 "GET /api/api/kg/statistics/ HTTP/1.1" 404 6011
+INFO 2025-04-22 00:49:20,355 basehttp 27956 23160 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 00:49:23,653 log 27956 38668 Not Found: /api/api/kg/visualization/
+WARNING 2025-04-22 00:49:23,653 basehttp 27956 38668 "GET /api/api/kg/visualization/?limit=50 HTTP/1.1" 404 6029
+INFO 2025-04-22 00:49:46,470 basehttp 27956 38560 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 00:49:53,195 basehttp 27956 37404 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 00:49:58,063 basehttp 27956 37772 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:50:01,953 basehttp 27956 6788 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 00:53:25,988 basehttp 27956 17412 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 00:58:25,432 basehttp 27956 37708 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:00:16,292 log 27956 39524 Not Found: /api/api/admin/feedback
+WARNING 2025-04-22 01:00:16,293 basehttp 27956 39524 "GET /api/api/admin/feedback HTTP/1.1" 404 6011
+INFO 2025-04-22 01:00:17,471 basehttp 27956 39884 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:00:50,279 log 27956 19948 Not Found: /api/admin/feedback
+WARNING 2025-04-22 01:00:50,280 basehttp 27956 19948 "GET /api/admin/feedback HTTP/1.1" 404 5999
+WARNING 2025-04-22 01:00:59,893 log 27956 28248 Not Found: /api/admin/feedback
+WARNING 2025-04-22 01:00:59,894 basehttp 27956 28248 "GET /api/admin/feedback HTTP/1.1" 404 5999
+INFO 2025-04-22 01:01:43,162 basehttp 27956 1452 "GET /api/user/feedback HTTP/1.1" 301 0
+WARNING 2025-04-22 01:01:43,425 log 27956 36956 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:01:43,426 basehttp 27956 36956 "GET /api/user/feedback/ HTTP/1.1" 405 0
+INFO 2025-04-22 01:01:49,559 basehttp 27956 38020 "GET /api/user/feedback HTTP/1.1" 301 0
+WARNING 2025-04-22 01:01:49,565 log 27956 37412 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:01:49,565 basehttp 27956 37412 "GET /api/user/feedback/ HTTP/1.1" 405 0
+INFO 2025-04-22 01:01:59,618 basehttp 27956 24260 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:02:01,985 basehttp 27956 34548 "GET /api/user/feedback HTTP/1.1" 301 0
+WARNING 2025-04-22 01:02:01,991 log 27956 37036 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:02:01,992 basehttp 27956 37036 "GET /api/user/feedback/ HTTP/1.1" 405 0
+INFO 2025-04-22 01:02:32,188 basehttp 27956 25212 "GET /api/user/feedback HTTP/1.1" 301 0
+WARNING 2025-04-22 01:02:32,438 log 27956 38704 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:02:32,439 basehttp 27956 38704 "GET /api/user/feedback/ HTTP/1.1" 405 0
+INFO 2025-04-22 01:03:20,805 basehttp 27956 34920 "GET /api/user/feedback HTTP/1.1" 301 0
+WARNING 2025-04-22 01:03:21,130 log 27956 38232 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:03:21,131 basehttp 27956 38232 "GET /api/user/feedback/ HTTP/1.1" 405 0
+INFO 2025-04-22 01:03:21,878 basehttp 27956 24104 "GET /api/user/feedback HTTP/1.1" 301 0
+WARNING 2025-04-22 01:03:21,884 log 27956 39772 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:03:21,885 basehttp 27956 39772 "GET /api/user/feedback/ HTTP/1.1" 405 0
+INFO 2025-04-22 01:04:59,113 autoreload 27956 33844 D:\APP\001test\Graduation Design\code\medkg_backend\accounts\views.py changed, reloading.
+INFO 2025-04-22 01:05:00,380 autoreload 26448 38608 Watching for file changes with StatReloader
+INFO 2025-04-22 01:05:45,848 basehttp 26448 38536 "GET /api/user/feedback HTTP/1.1" 301 0
+WARNING 2025-04-22 01:05:46,097 log 26448 28380 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:05:46,098 basehttp 26448 28380 "GET /api/user/feedback/ HTTP/1.1" 405 0
+WARNING 2025-04-22 01:05:48,852 log 26448 33580 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:05:48,853 basehttp 26448 33580 "GET /api/user/feedback/ HTTP/1.1" 405 0
+INFO 2025-04-22 01:05:55,585 basehttp 26448 7164 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:05:57,061 basehttp 26448 28624 "GET /api/user/feedback HTTP/1.1" 301 0
+WARNING 2025-04-22 01:05:57,067 log 26448 34252 Method Not Allowed (GET): /api/user/feedback/
+WARNING 2025-04-22 01:05:57,068 basehttp 26448 34252 "GET /api/user/feedback/ HTTP/1.1" 405 0
+WARNING 2025-04-22 01:06:49,544 log 26448 37272 Not Found: /api/admin/feedback
+WARNING 2025-04-22 01:06:49,546 basehttp 26448 37272 "GET /api/admin/feedback HTTP/1.1" 404 5999
+INFO 2025-04-22 01:07:49,130 basehttp 26448 37768 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:07:49,449 log 26448 39772 Not Found: /api/admin/feedback
+WARNING 2025-04-22 01:07:49,449 basehttp 26448 39772 "GET /api/admin/feedback HTTP/1.1" 404 5999
+INFO 2025-04-22 01:08:27,436 basehttp 26448 26556 "GET /api/admin/feedbacks HTTP/1.1" 301 0
+INFO 2025-04-22 01:08:27,481 basehttp 26448 34168 "GET /api/admin/feedbacks/ HTTP/1.1" 200 606
+INFO 2025-04-22 01:08:32,446 basehttp 26448 40100 "GET /api/admin/feedbacks HTTP/1.1" 301 0
+INFO 2025-04-22 01:08:32,458 basehttp 26448 40108 "GET /api/admin/feedbacks/ HTTP/1.1" 200 606
+INFO 2025-04-22 01:08:44,727 basehttp 26448 40344 "GET /api/admin/feedbacks HTTP/1.1" 301 0
+INFO 2025-04-22 01:08:44,760 basehttp 26448 40348 "GET /api/admin/feedbacks/ HTTP/1.1" 200 606
+INFO 2025-04-22 01:08:50,711 basehttp 26448 40380 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:08:51,594 basehttp 26448 40416 "GET /api/admin/feedbacks HTTP/1.1" 301 0
+INFO 2025-04-22 01:08:51,606 basehttp 26448 40420 "GET /api/admin/feedbacks/ HTTP/1.1" 200 606
+WARNING 2025-04-22 01:11:50,235 log 26448 40620 Not Found: /api/api/admin/feedback
+WARNING 2025-04-22 01:11:50,236 basehttp 26448 40620 "GET /api/api/admin/feedback HTTP/1.1" 404 6011
+WARNING 2025-04-22 01:14:17,906 log 26448 39556 Not Found: /api/api/accounts/user_bugs/
+WARNING 2025-04-22 01:14:17,907 basehttp 26448 39556 "GET /api/api/accounts/user_bugs/ HTTP/1.1" 404 6026
+INFO 2025-04-22 01:16:08,681 basehttp 26448 31124 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:16:10,081 log 26448 40324 Not Found: /api/api/accounts/user_bugs/
+WARNING 2025-04-22 01:16:10,082 basehttp 26448 40324 "GET /api/api/accounts/user_bugs/ HTTP/1.1" 404 6026
+WARNING 2025-04-22 01:16:45,227 log 26448 40696 Not Found: /api/api/accounts/user_bugs/
+WARNING 2025-04-22 01:16:45,228 basehttp 26448 40696 "GET /api/api/accounts/user_bugs/ HTTP/1.1" 404 6026
+WARNING 2025-04-22 01:16:49,322 log 26448 40660 Not Found: /api/api/accounts/user_bugs/
+WARNING 2025-04-22 01:16:49,323 basehttp 26448 40660 "GET /api/api/accounts/user_bugs/ HTTP/1.1" 404 6026
+INFO 2025-04-22 01:16:50,148 basehttp 26448 28452 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:16:55,707 log 26448 17392 Not Found: /api/api/accounts/user_bugs/
+WARNING 2025-04-22 01:16:55,708 basehttp 26448 17392 "GET /api/api/accounts/user_bugs/ HTTP/1.1" 404 6026
+WARNING 2025-04-22 01:17:09,269 log 26448 39460 Not Found: /api/api/accounts/user_bugs/
+WARNING 2025-04-22 01:17:09,273 basehttp 26448 39460 "GET /api/api/accounts/user_bugs/ HTTP/1.1" 404 6026
+INFO 2025-04-22 01:17:10,436 basehttp 26448 13300 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:17:41,308 log 26448 29996 Not Found: /api/api/accounts/user_bugs/
+WARNING 2025-04-22 01:17:41,309 basehttp 26448 29996 "GET /api/api/accounts/user_bugs/ HTTP/1.1" 404 6026
+WARNING 2025-04-22 01:18:02,970 log 26448 33984 Not Found: /api/accounts/user_bugs/
+WARNING 2025-04-22 01:18:02,972 basehttp 26448 33984 "GET /api/accounts/user_bugs/ HTTP/1.1" 404 6014
+WARNING 2025-04-22 01:18:11,916 log 26448 31900 Not Found: /api/accounts/user_bugs/
+WARNING 2025-04-22 01:18:11,917 basehttp 26448 31900 "GET /api/accounts/user_bugs/ HTTP/1.1" 404 6014
+INFO 2025-04-22 01:18:13,138 basehttp 26448 40528 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:19:08,772 log 26448 40800 Not Found: /api/accounts/user_bugs/
+WARNING 2025-04-22 01:19:08,773 basehttp 26448 40800 "GET /api/accounts/user_bugs/ HTTP/1.1" 404 6014
+INFO 2025-04-22 01:20:05,992 basehttp 26448 31660 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:21:41,472 basehttp 26448 27824 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:25:28,101 log 26448 40372 Not Found: /api/accounts/user_bugs/
+WARNING 2025-04-22 01:25:28,101 basehttp 26448 40372 "GET /api/accounts/user_bugs/ HTTP/1.1" 404 6014
+INFO 2025-04-22 01:25:44,713 basehttp 26448 38968 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:25:46,200 log 26448 36956 Not Found: /api/accounts/user_bugs/
+WARNING 2025-04-22 01:25:46,201 basehttp 26448 36956 "GET /api/accounts/user_bugs/ HTTP/1.1" 404 6014
+WARNING 2025-04-22 01:27:06,985 log 26448 39468 Not Found: /api/api/admin/feedbacks/
+WARNING 2025-04-22 01:27:06,986 basehttp 26448 39468 "GET /api/api/admin/feedbacks/ HTTP/1.1" 404 6017
+INFO 2025-04-22 01:28:10,105 basehttp 26448 40544 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:28:11,361 log 26448 35964 Not Found: /api/api/admin/feedbacks/
+WARNING 2025-04-22 01:28:11,362 basehttp 26448 35964 "GET /api/api/admin/feedbacks/ HTTP/1.1" 404 6017
+INFO 2025-04-22 01:29:19,443 basehttp 26448 40136 "GET /api/admin/feedbacks/ HTTP/1.1" 200 606
+INFO 2025-04-22 01:29:27,374 basehttp 26448 22836 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:29:27,388 basehttp 26448 25628 "GET /api/admin/feedbacks/ HTTP/1.1" 200 606
+INFO 2025-04-22 01:39:21,023 autoreload 32544 22224 Watching for file changes with StatReloader
+INFO 2025-04-22 01:40:16,165 autoreload 38188 38624 Watching for file changes with StatReloader
+INFO 2025-04-22 01:41:28,787 basehttp 38188 20440 "POST /api/logout/ HTTP/1.1" 200 58
+INFO 2025-04-22 01:41:28,818 basehttp 38188 27752 "GET /api/public-key/ HTTP/1.1" 200 481
+INFO 2025-04-22 01:41:36,771 basehttp 38188 26412 "POST /api/login/ HTTP/1.1" 200 346
+INFO 2025-04-22 01:41:52,038 basehttp 38188 11184 "POST /api/admin/login/ HTTP/1.1" 200 99
+INFO 2025-04-22 01:41:53,672 basehttp 38188 35536 "GET /api/admin/feedbacks/ HTTP/1.1" 200 606
+INFO 2025-04-22 01:41:54,924 basehttp 38188 31472 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:42:18,733 basehttp 38188 33484 "POST /api/user/feedback/ HTTP/1.1" 200 116
+INFO 2025-04-22 01:42:23,666 basehttp 38188 24592 "GET /api/admin/feedbacks/ HTTP/1.1" 200 899
+INFO 2025-04-22 01:42:24,364 basehttp 38188 22860 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:42:27,632 basehttp 38188 2220 "PUT /api/admin/feedbacks/3/ HTTP/1.1" 200 80
+INFO 2025-04-22 01:42:55,348 basehttp 38188 39048 "GET /api/admin/logs/system/?level=INFO&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 01:42:55,363 basehttp 38188 23976 "GET /api/admin/logs/system/?limit=15&offset=0 HTTP/1.1" 200 23086
+INFO 2025-04-22 01:42:55,366 basehttp 38188 29072 "GET /api/admin/logs/system/?level=WARNING&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 01:42:55,389 basehttp 38188 37976 "GET /api/admin/logs/system/?level=ERROR&limit=1 HTTP/1.1" 200 4757
+INFO 2025-04-22 01:42:55,406 basehttp 38188 32964 "GET /api/admin/logs/system/?level=CRITICAL&limit=1 HTTP/1.1" 200 36
+INFO 2025-04-22 01:43:07,039 basehttp 38188 37012 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 01:43:09,582 basehttp 38188 34680 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 01:43:12,952 basehttp 38188 15860 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+WARNING 2025-04-22 01:43:17,721 log 38188 19048 Not Found: /api/api/qa/
+WARNING 2025-04-22 01:43:17,722 basehttp 38188 19048 "POST /api/api/qa/ HTTP/1.1" 404 5979
+WARNING 2025-04-22 01:43:28,974 log 38188 31816 Not Found: /api/api/qa/
+WARNING 2025-04-22 01:43:28,975 basehttp 38188 31816 "POST /api/api/qa/ HTTP/1.1" 404 5979
+INFO 2025-04-22 01:44:12,452 views 38188 39828 User anonymous question: 感冒药和发烧药有什么区别？
+INFO 2025-04-22 01:44:12,850 basehttp 38188 39828 "POST /api/qa/ HTTP/1.1" 200 4036
+WARNING 2025-04-22 01:44:12,878 log 38188 40748 Not Found: /api/api/logs/chat/
+WARNING 2025-04-22 01:44:12,881 basehttp 38188 40748 "POST /api/api/logs/chat/ HTTP/1.1" 404 6000
+INFO 2025-04-22 01:44:32,405 views 38188 33972 User anonymous question: 感冒药和发烧药有什么区别？
+INFO 2025-04-22 01:44:32,441 basehttp 38188 33972 "POST /api/qa/ HTTP/1.1" 200 4036
+INFO 2025-04-22 01:44:32,458 basehttp 38188 31240 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-22 01:44:42,059 views 38188 26704 User anonymous question: 阳痿
+INFO 2025-04-22 01:44:42,140 basehttp 38188 26704 "POST /api/qa/ HTTP/1.1" 200 1337
+INFO 2025-04-22 01:44:42,169 basehttp 38188 27776 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-22 01:44:52,244 views 38188 13300 User anonymous question: 阳痿的并发症
+INFO 2025-04-22 01:44:52,327 basehttp 38188 13300 "POST /api/qa/ HTTP/1.1" 200 295
+INFO 2025-04-22 01:44:52,344 basehttp 38188 18672 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-22 01:45:02,521 views 38188 33140 User anonymous question: 阳痿应该吃什么
+INFO 2025-04-22 01:45:02,656 basehttp 38188 33140 "POST /api/qa/ HTTP/1.1" 200 2154
+ERROR 2025-04-22 01:45:02,822 log 38188 33484 Internal Server Error: /api/logs/chat/
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1366, "Incorrect string value: '\\xF0\\x9F\\x8D\\xBD\\xEF\\xB8...' for column 'answer' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\code\medkg_backend\accounts\views.py", line 377, in record_chat_log
+    UserLog.objects.create(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1366, "Incorrect string value: '\\xF0\\x9F\\x8D\\xBD\\xEF\\xB8...' for column 'answer' at row 1")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\APP\001test\Graduation Design\venv\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "D:\APP\001test\Graduation Design\code\medkg_backend\accounts\views.py", line 392, in record_chat_log
+    }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+AttributeError: 'str' object has no attribute 'HTTP_500_INTERNAL_SERVER_ERROR'
+ERROR 2025-04-22 01:45:02,836 basehttp 38188 33484 "POST /api/logs/chat/ HTTP/1.1" 500 329921
+INFO 2025-04-22 01:45:34,326 views 38188 34588 User anonymous question: 阳痿应该忌吃什么
+INFO 2025-04-22 01:45:34,421 basehttp 38188 34588 "POST /api/qa/ HTTP/1.1" 200 158
+INFO 2025-04-22 01:45:34,436 basehttp 38188 39964 "POST /api/logs/chat/ HTTP/1.1" 200 47
+INFO 2025-04-22 01:45:50,071 basehttp 38188 38532 "GET /api/user/info/ HTTP/1.1" 200 175
+INFO 2025-04-22 01:51:43,825 basehttp 38188 40412 "POST /api/admin/login/ HTTP/1.1" 200 99
+INFO 2025-04-22 01:51:46,076 basehttp 38188 27664 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:51:56,680 basehttp 38188 24888 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 01:52:15,050 basehttp 38188 9396 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:52:17,112 basehttp 38188 1288 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 01:53:34,522 basehttp 38188 41032 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+WARNING 2025-04-22 01:53:50,420 log 38188 41184 Not Found: /api/api/kg/visualization/
+WARNING 2025-04-22 01:53:50,421 basehttp 38188 41184 "GET /api/api/kg/visualization/?limit=50 HTTP/1.1" 404 6029
+WARNING 2025-04-22 01:54:56,833 log 38188 41176 Not Found: /api/api/kg/visualization/
+WARNING 2025-04-22 01:54:56,834 basehttp 38188 41176 "GET /api/api/kg/visualization/?limit=50 HTTP/1.1" 404 6029
+INFO 2025-04-22 01:55:30,409 basehttp 38188 6448 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 01:56:08,465 basehttp 38188 39904 "GET /api/kg/visualization/?limit=20 HTTP/1.1" 200 4200
+INFO 2025-04-22 01:56:13,168 basehttp 38188 30064 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 01:56:16,674 basehttp 38188 34488 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
+INFO 2025-04-22 01:56:25,379 basehttp 38188 41908 "GET /api/kg/statistics/ HTTP/1.1" 200 758
+INFO 2025-04-22 01:56:27,041 basehttp 38188 41664 "GET /api/kg/visualization/?limit=50 HTTP/1.1" 200 10400
